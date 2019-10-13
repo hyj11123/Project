@@ -20,5 +20,9 @@
            <put-attribute name="content" value="/WEB-INF/views/template/content.jsp"/>
         </definition>
         
+        <definition name="header" extends="layout">
+           <put-attribute name="login" value="/WEB-INF/views/login.jsp"/>
+        </definition>
+        
       
 </tiles-definitions>

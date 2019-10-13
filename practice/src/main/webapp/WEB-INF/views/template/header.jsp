@@ -66,14 +66,14 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
+               <li><a href="${pageContext.request.contextPath }/login.jsp">로그인</a></li>
+               <li><a href="#회원가입">회원가입</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
       </div>
-      
-      
     </div>
 
 
