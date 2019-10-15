@@ -66,8 +66,8 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
-               <li><a href="${pageContext.request.contextPath }/template/login.jsp">로그인</a></li>
-               <li><a href="${pageContext.request.contextPath }/template/signin.jsp">회원가입</a></li>
+                 <li><a href="${pageContext.request.contextPath }/user/login.jsp">로그인</a></li>
+             	 <li><a href="${pageContext.request.contextPath }/user/signin.jsp">회원가입</a></li>
               </ul>
             </div>
           </div>

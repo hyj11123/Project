@@ -10,6 +10,6 @@ public class SingInController {
 	@RequestMapping("/signinPage")
 	public String signinPage()
 	{
-		return "singin";
+		return "signin";
 	}
 }
