@@ -25,7 +25,7 @@
         </definition>
         
         <definition name="header" extends="layout">
-           <put-attribute name="login" value="/WEB-INF/views/template/signin.jsp"/>
+           <put-attribute name="singin" value="/WEB-INF/views/template/signin.jsp"/>
         </definition>
         
       
