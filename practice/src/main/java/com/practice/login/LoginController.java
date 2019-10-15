@@ -1,4 +1,4 @@
-package com.practice.LoginController;
+package com.practice.login;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

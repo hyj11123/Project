@@ -20,13 +20,13 @@
            <put-attribute name="content" value="/WEB-INF/views/template/content.jsp"/>
         </definition>
         
-        <definition name="header" extends="layout">
-           <put-attribute name="login" value="/WEB-INF/views/template/login.jsp"/>
+        <definition name="login" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/template/login/loginPage.jsp"/>
         </definition>
         
-        <definition name="header" extends="layout">
-           <put-attribute name="login" value="/WEB-INF/views/template/signin.jsp"/>
+        <definition name="signin" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/template/signin/signinPage.jsp"/>
         </definition>
         
-      
+      	
 </tiles-definitions>
