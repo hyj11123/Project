@@ -9,14 +9,14 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
+ 	
   </head>
     
     
  <div class="container">
  	
 	<form class="form-signin" action="${pageContext.request.contextPath }/login/userCheck" method="POST">
-		<h2 class="form-signin-heading">[DEEP] Sign in</h2>
+		<h2 class="form-signin-heading">Log in</h2>
 		<label for="inputEmail" class="sr-only">ID</label>
 		<input type="text" id="userId" name="userId" class="form-control" placeholder="ID..." required autofocus>
 		
