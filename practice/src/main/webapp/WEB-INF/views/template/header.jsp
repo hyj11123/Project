@@ -39,6 +39,7 @@
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li> <a href="${pageContext.request.contextPath }/login/loginPage">로그인</a></li>
                  <li><a href="${pageContext.request.contextPath }/sign/signupPage">회원가입</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>

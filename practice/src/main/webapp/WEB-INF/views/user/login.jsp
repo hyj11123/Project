@@ -14,7 +14,7 @@
     
     
  <div class="container">
- 	<br /><br /><br /><br /><br /><br /><br />
+ 	
 	<form class="form-signin" action="${pageContext.request.contextPath }/login/userCheck" method="POST">
 		<h2 class="form-signin-heading">[DEEP] Sign in</h2>
 		<label for="inputEmail" class="sr-only">ID</label>
