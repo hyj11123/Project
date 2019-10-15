@@ -3,7 +3,7 @@ package com.practice.singin;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("signin")
+@RequestMapping("sign")
 @Controller
 public class SignInController {
 		
@@ -12,4 +12,13 @@ public class SignInController {
 	{
 		return "signin";
 	}
+	
+	@RequestMapping("/signupPage")
+	public String signupPage()
+	{
+		return "signupPage";
+	}
+	
+	
+	
 }

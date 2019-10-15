@@ -16,6 +16,5 @@
     <script src="${pageContext.request.contextPath }/js/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="${pageContext.request.contextPath }/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
 </html>
     

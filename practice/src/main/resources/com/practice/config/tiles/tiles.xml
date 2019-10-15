@@ -28,5 +28,10 @@
            <put-attribute name="content" value="/WEB-INF/views/user/signin.jsp"/>
         </definition>
         
+        <definition name="signupPage" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/user/signup.jsp"/>
+        </definition>
+        
+        
       	
 </tiles-definitions>
