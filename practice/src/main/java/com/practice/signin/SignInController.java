@@ -1,17 +1,20 @@
-package com.practice.login;
+package com.practice.signin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@RequestMapping("login")
+@RequestMapping("signin")
 @Controller
-public class LoginController {
+public class SignInController {
 
-	@RequestMapping("/loginPage")
-	public String loginPage() {
-		return "login";
+	@RequestMapping("/signinPage")
+	public String signinPage()
+	{
+		return "signinPage";
 	}
+	
+	
 	
 	@RequestMapping("/userCheck")
 	public void userCheck(@RequestParam("userId")String userId,@RequestParam("userPass")String userPass) {

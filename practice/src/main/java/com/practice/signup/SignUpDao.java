@@ -1,4 +1,4 @@
-package com.practice.singin;
+package com.practice.signup;
 
 public class SignUpDao {
 

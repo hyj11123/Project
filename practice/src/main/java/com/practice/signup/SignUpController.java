@@ -1,18 +1,14 @@
-package com.practice.singin;
+package com.practice.signup;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@RequestMapping("sign")
+@RequestMapping("signup")
 @Controller
 public class SignUpController {
 		
-	@RequestMapping("/signinPage")
-	public String signinPage()
-	{
-		return "signin";
-	}
+	
 	
 	@RequestMapping("/signupPage")
 	public String signupPage()

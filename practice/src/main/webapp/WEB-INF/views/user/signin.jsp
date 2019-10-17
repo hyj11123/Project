@@ -11,11 +11,11 @@
     <meta name="author" content="">
  	
   </head>
-    
+
     
  <div class="container">
  	
-	<form class="form-signin" action="${pageContext.request.contextPath }/login/userCheck" method="POST">
+	<form class="form-signin" action="${pageContext.request.contextPath }/signin/userCheck" method="POST">
 		<h2 class="form-signin-heading">Log in</h2>
 		<label for="inputEmail" class="sr-only">ID</label>
 		<input type="text" id="userId" name="userId" class="form-control" placeholder="ID..." required autofocus>
@@ -29,7 +29,7 @@
 			</label>
 		</div>
 		
-		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		<button class="btn btn-lg btn-primary btn btn-warning" type="submit">Sign in</button>
 	</form>
 
 </div> <!-- /container -->
