@@ -41,6 +41,7 @@ public class SignUpController {
 		
 		MemberVO vo = new MemberVO();
 		
+		
 		vo.setName(name);
 		vo.setId(id);
 		vo.setPassword(password);
@@ -51,7 +52,7 @@ public class SignUpController {
 		
 		sService.signUp(vo);
 		
-		return "main";
+		return "cm";
 	}
 	
 	

@@ -53,6 +53,7 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li> -->
+                <li><a href="${pageContext.request.contextPath }/mypage/myPage">마이페이지</a></li>
                 <li> <a href="${pageContext.request.contextPath }/signin/signinPage">로그인</a></li>
                 <li><a href="${pageContext.request.contextPath }/signup/signupPage">회원가입</a></li>
               </ul>
