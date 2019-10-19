@@ -15,7 +15,12 @@ DETAIL_ADD varchar(250)
 	<div class="col-md-2"></div>
 
 	<div class="col-md-8">
-		<form action="${pageContext.request.contextPath }/sign/userJoin"  class="form-horizontal">
+		<form action="${pageContext.request.contextPath }/signup/userJoin"  class="form-horizontal">
+			<!-- NAME -->
+			<div class="form-group">
+				<label for="inputID" class="control-label">NAME</label> 
+				<input type="text" id="Name" name="Name" class="form-control" placeholder="NAME" />
+			</div>
 			<!-- ID -->
 			<div class="form-group">
 				<label for="inputID" class="control-label">ID</label> 
