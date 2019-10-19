@@ -20,6 +20,10 @@
            <put-attribute name="content" value="/WEB-INF/views/template/content.jsp"/>
         </definition>
         
+        <definition name="cm" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/cm.jsp"/>
+        </definition>
+        
         <definition name="signinPage" extends="layout">
            <put-attribute name="content" value="/WEB-INF/views/user/signin.jsp"/>
         </definition>
