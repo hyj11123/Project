@@ -3,6 +3,7 @@ package com.practice.signin;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +25,9 @@ public class SignInController {
 	
 	
 	@RequestMapping("/userCheck")
-	public String userCheck(@RequestParam("userId")String userId,@RequestParam("userPass")String userPass) {
+	public String userCheck(@RequestParam("userId")String userId,
+							@RequestParam("userPass")String userPass
+							,HttpSession session) {
 		System.out.println(userId);
 		System.out.println(userPass);
 		
@@ -37,9 +40,11 @@ public class SignInController {
 		
 		if(list.size() > 0) {
 			// login
-			System.out.println("Login!!!!");
-			System.out.println("Login!!!!");
-			System.out.println("Login!!!!");
+			session.setAttribute("login_id", list.get(0).getId());
+			session.setAttribute("login_email", list.get(0).getEmail());
+			session.setAttribute("login_name", list.get(0).getName());
+			session.setAttribute("login_password", list.get(0).getPassword());
+			
 			
 			return "cm";
 		} else {

@@ -7,17 +7,17 @@
   <mapper namespace="signin">
 	
 	<select id="signin" parameterType="memberVO" resultType="memberVO">
-		SELECT 	NAME
-  				,ID
-  				,PASSWORD
-  				,EMAIL
-  				,ADD
-  				,DETAIL_ADD
-  				,LEVEL
-  				,ZIP_CODE
-		  FROM 	MEMBER
-		 WHERE 	ID = #{id}
-		   AND 	PASSWORD = #{password}
+		SELECT 	`NAME`
+  				,`ID`
+  				,`PASSWORD`
+  				,`EMAIL`
+  				,`ADD`
+  				,`DETAIL_ADD`
+  				,`LEVEL`
+  				,`ZIP_CODE`
+		  FROM 	`MEMBER`
+		 WHERE 	`ID` = #{id}
+		   AND 	`PASSWORD` = #{password}
 	</select>
 	
 

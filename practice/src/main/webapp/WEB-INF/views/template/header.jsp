@@ -53,9 +53,15 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li> -->
-                <li><a href="${pageContext.request.contextPath }/mypage/myPage">마이페이지</a></li>
-                <li> <a href="${pageContext.request.contextPath }/signin/signinPage">로그인</a></li>
-                <li><a href="${pageContext.request.contextPath }/signup/signupPage">회원가입</a></li>
+                <c:if test="${!empty login_id }">
+                	 <li> <a href="${pageContext.request.contextPath }/mypage/myPage">마이페이지</a></li>
+               		 <li><a href="${pageContext.request.contextPath }/cm/cmPage">로그아웃</a></li>
+                </c:if>
+                
+                 <c:if test="${empty login_id }">
+	                <li> <a href="${pageContext.request.contextPath }/signin/signinPage">로그인</a></li>
+	                <li><a href="${pageContext.request.contextPath }/signup/signupPage">회원가입</a></li>
+                </c:if>
               </ul>
             </div>
           </div>
@@ -63,7 +69,10 @@
 
       </div>
     </div>
-
+    
+     <c:if test="${!empty login_id }">
+  		<h1> ${login_id }님 환영합니다.</h1>
+ 	 </c:if>
 
     <!-- Carousel
     ================================================== -->
