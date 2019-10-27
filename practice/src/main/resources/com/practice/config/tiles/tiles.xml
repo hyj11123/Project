@@ -36,6 +36,9 @@
            <put-attribute name="content" value="/WEB-INF/views/user/mypage.jsp"/>
         </definition>
         
+        <definition name="update" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/user/update.jsp"/>
+        </definition>
         
       	
 </tiles-definitions>

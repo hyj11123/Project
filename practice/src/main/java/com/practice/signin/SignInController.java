@@ -23,18 +23,17 @@ public class SignInController {
 	}
 	
 	
-	
 	@RequestMapping("/userCheck")
 	public String userCheck(@RequestParam("userId")String userId,
 							@RequestParam("userPass")String userPass
 							,HttpSession session) {
-		System.out.println(userId);
-		System.out.println(userPass);
 		
 		MemberVO vo = new MemberVO();
-		
 		vo.setId(userId);
 		vo.setPassword(userPass);
+		
+		System.out.println(userId);
+		System.out.println(userPass);
 		
 		List<MemberVO> list = aService.signin(vo);
 		
@@ -44,8 +43,9 @@ public class SignInController {
 			session.setAttribute("login_email", list.get(0).getEmail());
 			session.setAttribute("login_name", list.get(0).getName());
 			session.setAttribute("login_password", list.get(0).getPassword());
-			
-			
+			session.setAttribute("login_zip_code", list.get(0).getZip_code());
+			session.setAttribute("login_add", list.get(0).getAdd());
+			session.setAttribute("login_detail_add", list.get(0).getDetail_add());
 			return "cm";
 		} else {
 			// failed login
@@ -55,8 +55,22 @@ public class SignInController {
 			
 			return "cm";
 		}
-		
-		
-
 	}
+	
+	
+	@RequestMapping("/logOut")
+	public String logOut(HttpSession session) {
+		
+		session.removeAttribute("login_id");
+		session.removeAttribute("login_email");
+		session.removeAttribute("login_name");
+		session.removeAttribute("login_password");
+		session.removeAttribute("login_zip_code");
+		session.removeAttribute("login_add");
+		session.removeAttribute("login_detail_add");
+		
+		return "cm";
+	}
+	
+	
 }

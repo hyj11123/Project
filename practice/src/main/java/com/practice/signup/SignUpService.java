@@ -6,8 +6,6 @@ import org.springframework.stereotype.Service;
 
 import com.practice.signin.MemberVO;
 
-
-
 @Service("signUpService")
 public class SignUpService {
 	

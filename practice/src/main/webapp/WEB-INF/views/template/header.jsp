@@ -54,8 +54,8 @@
                   </ul>
                 </li> -->
                 <c:if test="${!empty login_id }">
-                	 <li> <a href="${pageContext.request.contextPath }/mypage/myPage">마이페이지</a></li>
-               		 <li><a href="${pageContext.request.contextPath }/cm/cmPage">로그아웃</a></li>
+                	 <li> <a href="${pageContext.request.contextPath }/my/myPage">마이페이지</a></li>
+               		 <li><a href="${pageContext.request.contextPath }/signin/logOut">로그아웃</a></li>
                 </c:if>
                 
                  <c:if test="${empty login_id }">

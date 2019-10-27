@@ -11,5 +11,6 @@
 	  		<mapper resource="com/practice/config/db/mapper/test.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/member.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/signin.xml"/>
+	  		<mapper resource="com/practice/config/db/mapper/revise.xml"/>
 	  </mappers> 
 </configuration>

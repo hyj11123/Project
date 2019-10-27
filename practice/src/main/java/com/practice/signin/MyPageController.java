@@ -3,11 +3,12 @@ package com.practice.signin;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("mypage")
+@RequestMapping("my")
 @Controller
 public class MyPageController {
 
@@ -15,7 +16,9 @@ public class MyPageController {
 	private SignInService aService;
 
 	@RequestMapping("/myPage")
-	public String myPage() {
+	public String myPage(HttpSession session) {
+		
+		
 		return "mypage";
 	}
 
