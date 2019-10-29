@@ -50,7 +50,7 @@ public class SignUpController {
 		vo.setEmail(email);
 		vo.setZip_code(zip_code);
 		vo.setAdd(add);
-		vo.setAdd(detail_add);
+		vo.setDetail_add(detail_add);
 		
 		sService.signUp(vo);
 		

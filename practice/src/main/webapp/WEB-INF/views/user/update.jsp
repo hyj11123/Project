@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
-<link rel="stylesheet" href="css/user.css" />
+
 
 
 <body>
@@ -9,14 +9,14 @@
 		<div class="col-md-2"></div>
 
 		<div class="col-md-8">
-			<form action="${pageContext.request.contextPath }/signup/userJoin"
+			<form action="${pageContext.request.contextPath }/update/updateJoin"
 				class="form-horizontal">
 				<div class="Id">
 					<!-- ID -->
-					<label for="inputID" class="control-label">ID</label><br /> ¾ÆÀÌµğ :
-					${login_id }<br /> ¼öÁ¤ÇÒ ¾ÆÀÌµğ :
+					<label for="inputID" class="control-label">ID</label><br /> ì•„ì´ë”” :
+					${login_id }<br /> ìˆ˜ì •í•  ì•„ì´ë”” :
 					<div class="form-group">
-						<input type="text" id="id" name="id" class="form-control"
+						<input type="text" id="Id" name="Id" class="form-control"
 							placeholder="ID" />
 					</div>
 					<br /> <br />
@@ -25,10 +25,10 @@
 
 				<div class="Name">
 					<!-- NAME -->
-					<label for="inputID" class="control-label">NAME</label><br /> ÀÌ¸§ :
-					${login_name}<br /> ¼öÁ¤ÇÒ ÀÌ¸§ :
+					<label for="inputID" class="control-label">NAME</label><br /> ì´ë¦„ :
+					${login_name}<br /> ìˆ˜ì •í•  ì´ë¦„ :
 					<div class="form-group">
-						<input type="text" id="name" name="name" class="form-control"
+						<input type="text" id="Name" name="Name" class="form-control"
 							placeholder="NAME" />
 					</div>
 					<br /> <br />
@@ -38,9 +38,9 @@
 				<div class="Password">
 					<!-- PASSWORD -->
 					<label for="inputID" class="control-label">PASSWORD</label><br />
-					ºñ¹Ğ¹øÈ£ : ${login_password }<br /> ¼öÁ¤ÇÒ ºñ¹Ğ¹øÈ£ :
+					ë¹„ë°€ë²ˆí˜¸ : ${login_password }<br /> ìˆ˜ì •í•  ë¹„ë°€ë²ˆí˜¸ :
 					<div class="form-group">
-						<input type="password" id="password" name="password"
+						<input type="password" id="Password" name="Password"
 							class="form-control" placeholder="PASSWORD" />
 					</div>
 					<br /> <br />
@@ -50,9 +50,9 @@
 				<div class="Email">
 					<!-- EMAIL -->
 					<label for="inputID" class="control-label">EMAIL</label> <br />
-					ÀÌ¸ŞÀÏ : ${login_email}<br /> ¼öÁ¤ÇÒ ÀÌ¸ŞÀÏ :
+					ì´ë©”ì¼ : ${login_email}<br /> ìˆ˜ì •í•  ì´ë©”ì¼ :
 					<div class="form-group">
-						<input type="email" id="email" name="email" class="form-control"
+						<input type="email" id="Email" name="Email" class="form-control"
 							placeholder="EMAIL" />
 					</div>
 					<br /> <br />
@@ -61,11 +61,11 @@
 
 				<div class="Add">
 					<!-- ADD -->
-					<label for="inputID" class="control-label">ADD</label> <br /> ÁÖ¼Ò :
-					${login_add}<br /> ¼öÁ¤ÇÒ ÁÖ¼Ò :
+					<label for="inputID" class="control-label">ADD</label> <br /> ì£¼ì†Œ :
+					${login_add}<br /> ìˆ˜ì •í•  ì£¼ì†Œ :
 					<div class="form-group">
-						<input type="text" id="add" name="add" class="form-control"
-							placeholder="ADD" readonly />
+						<input type="text" id="ADD" name="ADD" class="form-control"
+							placeholder="ADD" />
 					</div>
 					<br /> <br />
 				</div>
@@ -74,11 +74,11 @@
 				<div class="Zip_Code">
 					<!-- ZIP_CODE -->
 					<label for="inputID" class="control-label">ZIP_CODE</label> <br />
-					Áı¹øÈ£ : ${login_zip_code}<br /> ¼öÁ¤ÇÒ Áı¹øÈ£ :
+					ì§‘ë²ˆí˜¸ : ${login_zip_code}<br /> ìˆ˜ì •í•  ì§‘ë²ˆí˜¸ :
 					<div>
-						<input type="text" id="zip_Code" name="zip_Code"
-							class="form-control" placeholder="ZIP_CODE" readonly /> <input
-							type="button" id="zipBtn" value="°Ë»ö" class="btn btn-warning" />
+						<input type="text" id="Zip_Code" name="Zip_Code"
+							class="form-control" placeholder="ZIP_CODE" /> <input
+							type="button" id="zipBtn" value="ê²€ìƒ‰" class="btn btn-warning" />
 					</div>
 					<br /> <br />
 				</div>
@@ -87,16 +87,16 @@
 				<div class="Detail_Add">
 					<!-- DETAIL_ADD -->
 					<label for="inputID" class="control-label">DETAIL_ADD</label> <br />
-					»ó¼¼ ÁÖ¼Ò : ${login_detail_add}<br /> ¼öÁ¤ÇÒ »ó¼¼ÁÖ¼Ò
+					ìƒì„¸ ì£¼ì†Œ : ${login_detail_add}<br /> ìˆ˜ì •í•  ìƒì„¸ì£¼ì†Œ
 					<div class="form-group">
-						<input type="text" id="detail_add" name="detail_add"
+						<input type="text" id="Detail_Add" name="Detail_Add"
 							class="form-control" placeholder="DETAIL_ADD" />
 					</div>
 					<br /> <br />
 				</div>
 
 
-				<input type="submit" value="¼öÁ¤" class="btn btn-warning">
+				<input type="submit" value="ìˆ˜ì •" class="btn btn-warning">
 			</form>
 		</div>
 
@@ -112,26 +112,3 @@
 
 
 
-<script
-	src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-
-<script>
-	const zipBtn = document.getElementById("zipBtn");
-	const Zip_Code = document.getElementById("zip_Code");
-	const addInput = document.getElementById("add");
-	const detail_add = document.getElementById("detail_add");
-
-	function callZipcode() {
-		new daum.Postcode({
-			oncomplete : function(data) {
-
-				zip_Code.value = data.zonecode;
-				addInput.value = data.address;
-				detail_add.focus();
-
-			}
-		}).open();
-	}
-
-	zipBtn.addEventListener("click", callZipcode);
-</script>

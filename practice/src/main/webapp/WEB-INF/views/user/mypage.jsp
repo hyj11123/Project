@@ -1,21 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     
-	<h1>¾ÆÀÌµğ : ${login_id }</h1><br><br>
+	<h1>ì•„ì´ë”” : ${login_id }</h1><br><br>
 	
-	ÀÌ¸§ : ${login_name}<br><br>
+	ì´ë¦„ : ${login_name}<br><br>
 	
-	ºñ¹Ğ¹øÈ£ : ${login_password }<br><br>
+	ë¹„ë°€ë²ˆí˜¸ : ${login_password }<br><br>
 
-	ÀÌ¸ŞÀÏ : ${login_email}<br><br>
+	ì´ë©”ì¼ : ${login_email}<br><br>
 	
-	Áı¹øÈ£ : ${login_zip_code}<br><br>
+	ì§‘ë²ˆí˜¸ : ${login_zip_code}<br><br>
 	
-	ÁÖ¼Ò : ${login_add}<br><br>
+	ì£¼ì†Œ : ${login_add}<br><br>
 	
-	»ó¼¼ ÁÖ¼Ò : ${login_detail_add}<br><br>
+	ìƒì„¸ ì£¼ì†Œ : ${login_detail_add}<br><br>
 	<a class="navbar-brand" href="${pageContext.request.contextPath }/update/updatePage">
-	<button type="button" class="btn btn-warning" id="revise">¼öÁ¤</button>
+	<button type="button" class="btn btn-warning" id="revise">ìˆ˜ì •</button>
 	</a>
 	
