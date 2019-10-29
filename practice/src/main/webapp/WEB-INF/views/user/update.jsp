@@ -3,7 +3,6 @@
 
 
 
-
 <body>
 	<div class="row">
 		<div class="col-md-2"></div>
@@ -65,7 +64,7 @@
 					${login_add}<br /> 수정할 주소 :
 					<div class="form-group">
 						<input type="text" id="ADD" name="ADD" class="form-control"
-							placeholder="ADD" />
+							placeholder="ADD" readonly />
 					</div>
 					<br /> <br />
 				</div>
@@ -77,7 +76,7 @@
 					집번호 : ${login_zip_code}<br /> 수정할 집번호 :
 					<div>
 						<input type="text" id="Zip_Code" name="Zip_Code"
-							class="form-control" placeholder="ZIP_CODE" /> <input
+							class="form-control" placeholder="ZIP_CODE" readonly /> <input
 							type="button" id="zipBtn" value="검색" class="btn btn-warning" />
 					</div>
 					<br /> <br />
@@ -112,3 +111,26 @@
 
 
 
+<script
+	src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+<script>
+	const zipBtn = document.getElementById("zipBtn");
+	const Zip_Code = document.getElementById("Zip_Code");
+	const ADD = document.getElementById("ADD");
+	const Detail_Add = document.getElementById("Detail_Add");
+
+	function callZipcode() {
+		new daum.Postcode({
+			oncomplete : function(data) {
+
+				Zip_Code.value = data.zonecode;
+				ADD.value = data.address;
+				Detail_Add.focus();
+
+			}
+		}).open();
+	}
+
+	zipBtn.addEventListener("click", callZipcode);
+</script>
