@@ -41,7 +41,7 @@
         </definition>
         
         <definition name="chicken" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage.jsp"/>
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/chickenPage.jsp"/>
         </definition>
         
         <definition name="boardList" extends="layout">
@@ -51,6 +51,10 @@
         
         <definition name="moveWritePage" extends="layout">
            <put-attribute name="content" value="/WEB-INF/views/board/boardWrite.jsp"/>
+        </definition>
+        
+        <definition name="bhc" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/bhc.jsp"/>
         </definition>
         
       	
