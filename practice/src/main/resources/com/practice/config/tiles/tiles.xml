@@ -40,18 +40,18 @@
            <put-attribute name="content" value="/WEB-INF/views/user/update.jsp"/>
         </definition>
         
-        
         <definition name="chicken" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/chickenPage.jsp"/>
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage.jsp"/>
         </definition>
         
         <definition name="boardList" extends="layout">
            <put-attribute name="content" value="/WEB-INF/views/board/boardList.jsp"/>
         </definition>
         
+        
         <definition name="moveWritePage" extends="layout">
            <put-attribute name="content" value="/WEB-INF/views/board/boardWrite.jsp"/>
         </definition>
-      	
+        
       	
 </tiles-definitions>
