@@ -6,21 +6,18 @@
 
 <mapper namespace="revise">
 
-	<select id="update" parameterType="memberVO"  resultType="memberVO">
-	UPDATE 	MEMBER
-	   SET 	NAME = #{name}
-	   		,ID = #{id}
-	   		,PASSWORD = #{password}
-	   		,EMAIL = #{email}
-	   		,ADD = #{add}
-	   		,DETAIL_ADD = #{detail_add}
-	   		,LEVEL = #{level}
-	   		,ZIP_CODE = #{zip_code}
-	 WHERE	MEMBER_UID = #{member_uid}
+	<update id="update" parameterType="memberVO" >
 	
+	UPDATE 	`MEMBER`
+	   SET 	`NAME` = #{name}
+	   		,`PASSWORD` = #{password}
+	   		,`EMAIL` = #{email}
+	   		,`ADD` = #{add}
+	   		,`DETAIL_ADD` = #{detail_add}
+	   		,`ZIP_CODE` = #{zip_code}
+	 WHERE	`MEMBER_UID` = #{member_uid}
 	
-	
-	</select>
+	</update>
 
 
 

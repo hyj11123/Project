@@ -24,21 +24,27 @@ public class SignInController {
 	
 	
 	@RequestMapping("/userCheck")
-	public String userCheck(@RequestParam("userId")String userId,
-							@RequestParam("userPass")String userPass
+	public String userCheck(@RequestParam("userId")String id,
+							@RequestParam("userPass")String password
 							,HttpSession session) {
 		
 		MemberVO vo = new MemberVO();
-		vo.setId(userId);
-		vo.setPassword(userPass);
+		vo.setId(id);
+		vo.setPassword(password);
 		
-		System.out.println(userId);
-		System.out.println(userPass);
+		System.out.println(id);
+		System.out.println(password);
 		
 		List<MemberVO> list = aService.signin(vo);
 		
+		System.out.println(list.get(0).getMember_uid());
+		System.out.println(list.get(0).getMember_uid());
+		System.out.println(list.get(0).getMember_uid());
+		System.out.println(list.get(0).getMember_uid());
+		
 		if(list.size() > 0) {
 			// login
+			session.setAttribute("login_member_uid", list.get(0).getMember_uid());
 			session.setAttribute("login_id", list.get(0).getId());
 			session.setAttribute("login_email", list.get(0).getEmail());
 			session.setAttribute("login_name", list.get(0).getName());
@@ -60,7 +66,7 @@ public class SignInController {
 	
 	@RequestMapping("/logOut")
 	public String logOut(HttpSession session) {
-		
+		session.removeAttribute("login_member_uid");
 		session.removeAttribute("login_id");
 		session.removeAttribute("login_email");
 		session.removeAttribute("login_name");

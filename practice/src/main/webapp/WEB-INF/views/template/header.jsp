@@ -62,6 +62,7 @@
 	                <li> <a href="${pageContext.request.contextPath }/signin/signinPage">로그인</a></li>
 	                <li><a href="${pageContext.request.contextPath }/signup/signupPage">회원가입</a></li>
                 </c:if>
+                <li><a href="${pageContext.request.contextPath }/board/boardList">게시판</a></li>
               </ul>
             </div>
           </div>

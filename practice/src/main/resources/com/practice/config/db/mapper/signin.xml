@@ -7,7 +7,8 @@
   <mapper namespace="signin">
 	
 	<select id="signin" parameterType="memberVO" resultType="memberVO">
-		SELECT 	`NAME`
+		SELECT 	MEMBER_UID
+				,`NAME`
   				,`ID`
   				,`PASSWORD`
   				,`EMAIL`

@@ -1,5 +1,6 @@
 package com.practice.update;
 
+
 import javax.annotation.Resource;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -13,8 +14,13 @@ public class UpdateDao {
 	@Resource(name="sqlSessionTemplate")
 	private SqlSessionTemplate sqlSessionTemplate;
 	
+	
 	public void update(MemberVO vo)
 	{
-		sqlSessionTemplate.insert("revise.update", vo);
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		sqlSessionTemplate.update("revise.update", vo);
 	}
 }
