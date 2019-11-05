@@ -2,23 +2,23 @@ package com.practice.delete;
 
 import javax.annotation.Resource;
 
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Repository;
 
-//@Repository("deleteDao")
-//public class DeleteDao {
-//	
-//	@Resource(name="sqlSessionTemplate")
-//	private SqlSessonTemplate sqlSessionTemplate;
-//	
-//	public void delete(MemeberVO vo) 
-//	{
-//		System.out.println("Dao");
-//		System.out.println("Dao");
-//		System.out.println("Dao");
-//		System.out.println("Dao");
-//		sqlSessionTemplate.detele("delete.dmember",vo);
-//		
-//	}
-//
-//	
-//}
+import com.practice.signin.MemberVO;
+
+@Repository("deleteDao")
+public class DeleteDao {
+
+	@Resource(name = "sqlSessionTemplate")
+	private SqlSessionTemplate sqlSessionTemplate;
+
+	public void delete(MemberVO vo) {
+
+		sqlSessionTemplate.delete("member.dmember", vo);
+
+		
+
+	}
+
+}

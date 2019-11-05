@@ -33,6 +33,7 @@
    			</table>
    			
    			<button type="button" class="createBtn" id="createBtn" name="createBtn" onclick="create()">글 작성</button>
+   			<button type="button" class="deleteBtn" id="deleteBtn" name="deleteBtn" onclick="delete()">글 삭제</button>
    			
    		</div>
    		

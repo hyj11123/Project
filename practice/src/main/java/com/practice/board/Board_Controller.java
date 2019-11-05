@@ -3,6 +3,7 @@ package com.practice.board;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -52,5 +53,17 @@ public class Board_Controller {
 	// updateBoard
 	
 	// deleteBoard
+	
+	public String deleteBoard(@RequestParam("T_uid")String t_uid, HttpSession session)
+	{
+		BoardVO vo = new BoardVO();
+		vo.setT_uid(t_uid);
+		
+		bSerivce.deleteBoard(vo);
+		
+
+		
+		return "boardList";
+	}
 
 }

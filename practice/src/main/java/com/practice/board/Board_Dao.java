@@ -34,4 +34,11 @@ public class Board_Dao {
 	
 	// deleteBoard
 	
+	public void deleteBoard(BoardVO vo) {
+		
+		sqlSessionTemplate.insert("board.boardDelete", vo);
+		
+			
+	}
+	
 }

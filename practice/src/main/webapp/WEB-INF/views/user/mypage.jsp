@@ -14,14 +14,39 @@
 			<button type="button" class="btn btn-warning" id="revise">수정</button>
 		</a>
 
-
-		<a type="submit" class="btn btn-danger" id="delete" >
-			아이디삭제
-		</a>
+		<form action="${pageContext.request.contextPath }/delete/deleteJoin" class = "form-horizontal">
+			<input type="hidden" name="member_uid" value="${login_member_uid }" />
+			<input type="submit" class="btn btn-danger" id="delete" value="회원탈퇴"/>
+		</form>
 
 
 
 	</div>
 	<div class="col-md-5"></div>
 </div>
+
+<script>
+$(document).ready(function(){ $('#delete').click(function() { var result = confirm('정말로 지울건가요???'); 
+
+if(result) { yes location.replace('cm.jsp'); } else { //no 
+		} 
+	}); 
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

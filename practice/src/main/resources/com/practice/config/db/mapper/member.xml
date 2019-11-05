@@ -30,4 +30,11 @@
 		)
 	</insert>
 	
+	<delete id="dmember" parameterType="memberVO">
+	
+	DELETE	
+	  FROM	`MEMBER`
+	 WHERE	`MEMBER_UID` = #{member_uid}
+	</delete>
+	
 </mapper>

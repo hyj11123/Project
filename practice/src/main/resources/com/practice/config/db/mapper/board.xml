@@ -25,5 +25,13 @@
 		)
 		
 	</insert>
+	
+	<delete id="boardDelete" parameterType="boardVO">
+	
+	DELETE	
+	  FROM	`T_BOARD`
+	 WHERE	`T_UID` = #{T_UID}
+	
+	</delete>
 
 </mapper>

@@ -29,4 +29,9 @@ public class Board_Service {
 	// updateBoard
 	
 	// deleteBoard
+	
+	public void deleteBoard(BoardVO vo) {
+		
+		bDao.deleteBoard(vo);;
+	}
 }

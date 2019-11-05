@@ -23,14 +23,14 @@ public class SignUpController {
 	}
 	
 	@RequestMapping("/userJoin")
-	public String userJoin(@RequestParam("Name")String name
-						,@RequestParam("Id")String id
-						,@RequestParam("Password")String password
-						,@RequestParam("Password_Checking")String pass_check
-						,@RequestParam("Email")String email
-						,@RequestParam("Zip_Code")String zip_code
-						,@RequestParam("ADD")String add
-						,@RequestParam("DETAIL_ADD")String detail_add)
+	public String userJoin(@RequestParam("name")String name
+						  ,@RequestParam("id")String id
+						  ,@RequestParam("password")String password
+						  ,@RequestParam("password_checking")String pass_check
+						  ,@RequestParam("email")String email
+						  ,@RequestParam("zip_Code")String zip_code
+						  ,@RequestParam("add")String add
+						  ,@RequestParam("detail_add")String detail_add)
 	{
 		
 		System.out.println(name);
