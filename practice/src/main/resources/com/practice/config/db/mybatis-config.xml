@@ -7,6 +7,7 @@
 		   	<typeAlias  alias="testVO"   type="com.practice.test.TestVO"/>
 		   	<typeAlias  alias="memberVO" type="com.practice.signin.MemberVO"/>
 		   	<typeAlias  alias="boardVO"  type="com.practice.board.BoardVO"/>
+		   	<typeAlias  alias="BhcVO"  	 type="com.practice.contentmain.chickens.bhc.BhcVO"/>
 	  </typeAliases>
 	  <mappers>
 	  		<mapper resource="com/practice/config/db/mapper/test.xml"/>
@@ -14,5 +15,6 @@
 	  		<mapper resource="com/practice/config/db/mapper/signin.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/revise.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/board.xml"/>
+	  		<mapper resource="com/practice/config/db/mapper/bhc.xml"/>
 	  </mappers> 
 </configuration>

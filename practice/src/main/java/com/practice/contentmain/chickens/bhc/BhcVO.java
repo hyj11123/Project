@@ -1,4 +1,4 @@
-package com.practice.contentmain.chickens;
+package com.practice.contentmain.chickens.bhc;
 
 public class BhcVO {
 
@@ -9,6 +9,16 @@ public class BhcVO {
 		private String spicy;
 		
 		private String review;
+		
+		private String brand_uid;
+		
+		public String getBrand_uid() {
+			return brand_uid;
+		}
+
+		public void setBrand_uid(String brand_uid) {
+			this.brand_uid = brand_uid;
+		}
 
 		public String getName() {
 			return name;

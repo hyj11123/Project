@@ -1,18 +1,43 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset= UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 
 
 
+<c:forEach items="${bList }" var="b">
+	<div>
+		${b.name }
+		${b.price }
+		${b.spicy }
+	</div>
+	
+<hr>
+</c:forEach>
 
+<br /><br /><br /><br />
+
+  
     
-  <button type="button" class="btn btn-primary"> ∏ﬁ¥∫ µÓ∑œ </button>
-  
-  <button type="button" class="btn btn-danger"> ∏ﬁ¥∫ ªË¡¶ </button>
+  <button type="button" class="btn btn-primary" id="js-addBtn"> Î©îÎâ¥ Îì±Î°ù </button>
   
   
-  
+  <button type="button" class="btn btn-danger" id= "js-deleteBtn"> Î©îÎâ¥ ÏÇ≠Ï†ú </button>
   
   
   
   
+  
+  
+  
+<script>
+ 	
+	const addBtn = document.getElementById("js-addBtn");
+	
+	function next(){
+		location.href = "/bhc/insertMenu"; 	
+	}
+	
+	addBtn.addEventListener("click",next);
+
+</script>

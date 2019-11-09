@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bhc">
+
+
+	<select id="bhcList" resultType="BhcVO">
+
+		SELECT NAME,
+		PRICE,
+		SPICY,
+		REVIEW
+		FROM BHC
+	</select>
+
+
+
+	<insert id="bhcSubmit" parameterType="BhcVO">
+		INSERT INTO BHC
+		(
+		NAME,
+		PRICE,
+		SPICY,
+		REVIEW,
+		BRAND_UID
+		)
+		VALUES
+		(
+		#{name},
+		#{price},
+		#{spicy},
+		#{review},
+		#{brand_uid}
+		)
+
+	</insert>
+
+</mapper>
+	

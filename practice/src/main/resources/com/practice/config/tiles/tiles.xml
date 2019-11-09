@@ -57,5 +57,9 @@
            <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/bhc.jsp"/>
         </definition>
         
+          <definition name="insertMenu" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/insertMenu.jsp"/>
+        </definition>
+        
       	
 </tiles-definitions>

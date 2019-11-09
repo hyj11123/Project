@@ -1,4 +1,4 @@
-package com.practice.contentmain.chickens;
+package com.practice.contentmain.chickens.bhc;
 
 import java.util.List;
 
@@ -18,16 +18,16 @@ public class BhcDao {
 	//bhcList
 	 public List<BhcVO> bhcList(){
 			
-	 List<BhcVO> list = sqlSessionTemplate.selectList(null, null);
+	 List<BhcVO> list = sqlSessionTemplate.selectList("bhc.bhcList");
 			
 	 return list;
 		
 	 }
 		
-		//bhcSubmmit
-	public void bhcSubmmit(BhcVO vo) {
+	//bhcSubmit
+	public void bhcSubmit(BhcVO vo) {
 		
-	sqlSessionTemplate.insert("", vo);
+	sqlSessionTemplate.insert("bhc.bhcSubmit", vo);
 	}
 		
 		

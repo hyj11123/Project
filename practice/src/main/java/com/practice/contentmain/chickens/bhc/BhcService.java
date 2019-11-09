@@ -1,4 +1,4 @@
-package com.practice.contentmain.chickens;
+package com.practice.contentmain.chickens.bhc;
 
 import java.util.List;
 
@@ -21,8 +21,9 @@ public class BhcService {
 	}
 	
 	//BhcSubmmit
-	public void bhcSubmmit(BhcVO vo) {
+	public void bhcSubmit(BhcVO vo) {
 		
-		bDao.bhcSubmmit(vo);
+		bDao.bhcSubmit(vo);
+		
 	}
 }

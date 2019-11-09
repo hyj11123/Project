@@ -1,4 +1,4 @@
-package com.practice.contentmain.chickens;
+package com.practice.contentmain.chickens.bhc;
 
 import java.util.List;
 
@@ -17,42 +17,52 @@ public class BhcController {
 	@Resource(name = "bhc_Service")
 	private BhcService bService;
 		
-	@RequestMapping("bhcList")
-	public String bhcList(Model model) {
-		
-		List<BhcVO> list = bService.bhcList();
-		
-		model.addAttribute("bList", list);
-		
-		return "bhcList";
-	}
 	
 	//BhcPage Start
 	@RequestMapping("/bhcPage")
-	public String bbqPage() {
+	public String bbqPage(Model model) {
+		List<BhcVO> list = bService.bhcList();
+		
+		model.addAttribute("bList", list);
 		return "bhc";
 	}
 	
-	@RequestMapping("bhcSubmmit")
-	public String bhcSubmmit(@RequestParam("name")String name,
+	//BhcPage Start
+	@RequestMapping("/insertMenu")
+	public String insertMenu() {
+		return "insertMenu";
+	}
+	
+	
+	@RequestMapping("bhcSubmit")
+	public String bhcSubmit( @RequestParam("name")String name,
 							 @RequestParam("price")String price,
 							 @RequestParam("spicy")String spicy,
-							 @RequestParam("review")String review)
+							 @RequestParam("review")String review,
+							 @RequestParam("brand_uid")String brand_uid )
 	{
 		System.out.println(name);
 		System.out.println(price);
 		System.out.println(spicy);
 		System.out.println(review);
+		System.out.println(brand_uid);
 		
 		BhcVO vo = new BhcVO();
 		vo.setName(name);
 		vo.setPrice(price);
 		vo.setSpicy(spicy);
 		vo.setReview(review);
+		vo.setBrand_uid(brand_uid);
 		
-		bService.bhcSubmmit(vo);
+		bService.bhcSubmit(vo);
 		
 		
-		return "bhcList";
+		return "bhc";
+	}
+	
+	@RequestMapping("bhcRead")
+	public String bhcRead() {
+		
+		return "bhcRead";
 	}
 }
