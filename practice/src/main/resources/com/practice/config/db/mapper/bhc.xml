@@ -39,21 +39,21 @@
 
 	<update id="bhcupdate" parameterType="BhcVO">
 
-		 UPDATE `BHC`
+		 UPDATE `MENU`
 			SET `NAME` = #{name}
 				,`PRICE` = #{PRICE}
 				,`SPICY` = #{SPICY}
 				,`REVIEW` = #{REVIEW}
 				,`BRAND_UID` = #{BRAND_UID}
-		  WHERE `BHC_UID` = #{BHC_UID}
+		  WHERE `MEUN_UID` = #{MEUN_UID}
 
 	</update>
 	
 	<delete id="bhcdelete" parameterType="BhcVO">
 	
 	DELETE	
-	  FROM	`BHC`
-	 WHERE	`BHC_UID` = #{BHC_uid}
+	  FROM	`MENU`
+	 WHERE	`MEUN_UID` = #{MEUN_uid}
 	</delete>
 	  
 	

@@ -78,7 +78,10 @@ public class BhcController {
 	
 	
 	// update
-	
+	@RequestMapping("updatebhc")
+	public String updatebhc() {
+		return "updatebhc";
+	}
 	
 	
 	@RequestMapping("bhcUpdate")
@@ -104,6 +107,10 @@ public class BhcController {
 		
 		bService.bhcUpdate(vo);
 		
+		
 		return "bhcRead";
 	}
+	
+	// delete
+	
 }

@@ -7,9 +7,9 @@
 
 <c:forEach items="${bList }" var="b">
 	<div>
-		${b.name }
-		${b.price }
-		${b.spicy }
+	이름 : 	${b.name }<br>
+	가격 : 	${b.price }<br>
+	매운정도 : 	${b.spicy }
 	</div>
 	
 <hr>
@@ -23,7 +23,9 @@
   
   <button type="button" class="btn btn-warning" id="js-updateBtn">메뉴수정</button>
   
-  <button type="button" class="btn btn-danger" id= "js-deleteBtn"> 메뉴 삭제 </button>
+  <form action="${pageContext.request.contextPath }/bhc/bhc">
+  	<input type="submit" class="btn btn-danger" id= "js-deleteBtn" value = "메뉴삭제"/>
+  </form>
   
   
   
