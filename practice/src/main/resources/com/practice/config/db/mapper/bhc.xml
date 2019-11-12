@@ -36,5 +36,28 @@
 
 	</insert>
 
+
+	<update id="bhcupdate" parameterType="BhcVO">
+
+		 UPDATE `BHC`
+			SET `NAME` = #{name}
+				,`PRICE` = #{PRICE}
+				,`SPICY` = #{SPICY}
+				,`REVIEW` = #{REVIEW}
+				,`BRAND_UID` = #{BRAND_UID}
+		  WHERE `BHC_UID` = #{BHC_UID}
+
+	</update>
+	
+	<delete id="bhcdelete" parameterType="BhcVO">
+	
+	DELETE	
+	  FROM	`BHC`
+	 WHERE	`BHC_UID` = #{BHC_uid}
+	</delete>
+	  
+	
+	
+
 </mapper>
 	

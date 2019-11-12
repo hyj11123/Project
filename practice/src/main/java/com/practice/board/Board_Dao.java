@@ -36,7 +36,7 @@ public class Board_Dao {
 	
 	public void deleteBoard(BoardVO vo) {
 		
-		sqlSessionTemplate.insert("board.boardDelete", vo);
+		sqlSessionTemplate.delete("board.boardDelete", vo);
 		
 			
 	}

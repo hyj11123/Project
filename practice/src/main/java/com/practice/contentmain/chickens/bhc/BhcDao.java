@@ -12,26 +12,31 @@ import com.practice.board.BoardVO;
 @Repository("bhcDao")
 public class BhcDao {
 
-	@Resource(name="sqlSessionTemplate")
+	@Resource(name = "sqlSessionTemplate")
 	private SqlSessionTemplate sqlSessionTemplate;
-		
-	//bhcList
-	 public List<BhcVO> bhcList(){
-			
-	 List<BhcVO> list = sqlSessionTemplate.selectList("bhc.bhcList");
-			
-	 return list;
-		
-	 }
-		
-	//bhcSubmit
-	public void bhcSubmit(BhcVO vo) {
-		
-	sqlSessionTemplate.insert("bhc.bhcSubmit", vo);
+
+	// bhcList
+	public List<BhcVO> bhcList() {
+
+		List<BhcVO> list = sqlSessionTemplate.selectList("bhc.bhcList");
+
+		return list;
+
 	}
-		
-		
-	//bhcUpdate
-		
-	//bhcDelete
+
+	// bhcSubmit
+	public void bhcSubmit(BhcVO vo) {
+
+		sqlSessionTemplate.insert("bhc.bhcSubmit", vo);
+	}
+
+	// bhcUpdate
+	public void bhcUpadte(BhcVO vo) {
+		sqlSessionTemplate.update("bhc.bhcupdate", vo);
+	}
+	// bhcDelete
+	
+	public void bhcdelete(BhcVO vo) {
+		sqlSessionTemplate.delete("bhc.bhcdelelte", vo);
+	}
 }

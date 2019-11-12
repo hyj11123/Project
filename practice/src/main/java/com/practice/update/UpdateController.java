@@ -49,6 +49,7 @@ public class UpdateController {
 		MemberVO vo= new MemberVO();
 		
 		
+		
 		vo.setMember_uid(member_uid);
 		vo.setName(name);
 		vo.setPassword(password);

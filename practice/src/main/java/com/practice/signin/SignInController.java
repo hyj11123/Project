@@ -42,6 +42,11 @@ public class SignInController {
 		System.out.println(list.get(0).getMember_uid());
 		System.out.println(list.get(0).getMember_uid());
 		
+
+
+		
+		
+		
 		if(list.size() > 0) {
 			// login
 			session.setAttribute("login_member_uid", list.get(0).getMember_uid());
@@ -52,6 +57,13 @@ public class SignInController {
 			session.setAttribute("login_zip_code", list.get(0).getZip_code());
 			session.setAttribute("login_add", list.get(0).getAdd());
 			session.setAttribute("login_detail_add", list.get(0).getDetail_add());
+			System.out.println("login");
+			System.out.println("login");
+			System.out.println("login");
+			System.out.println("login");
+			System.out.println("login");
+			System.out.println("login");
+			System.out.println("login");
 			return "cm";
 		} else {
 			// failed login
@@ -61,6 +73,10 @@ public class SignInController {
 			
 			return "cm";
 		}
+		
+		
+		
+		
 	}
 	
 	

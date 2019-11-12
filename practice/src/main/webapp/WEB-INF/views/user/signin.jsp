@@ -15,7 +15,7 @@
     
  <div class="container">
  	
-	<form class="form-signin" action="${pageContext.request.contextPath }/signin/userCheck" method="POST">
+	<form id="frm2" class="form-signin" action="${pageContext.request.contextPath }/signin/userCheck" method="POST">
 		<h2 class="form-signin-heading">Log in</h2>
 		<label for="inputEmail" class="sr-only">ID</label>
 		<input type="text" id="userId" name="userId" class="form-control" placeholder="ID..." required autofocus>
@@ -29,7 +29,7 @@
 			</label>
 		</div>
 		
-		<button class="btn btn-lg btn-primary btn btn-warning" type="submit">Sign in</button>
+		<input class="btn btn-lg btn-primary btn btn-warning" type="submit" value="Sign in" />
 	</form>
 
 </div> <!-- /container -->
@@ -40,5 +40,11 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="${pageContext.request.contextPath }/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>
+    
+
+    
+    </script>
   </body>
 

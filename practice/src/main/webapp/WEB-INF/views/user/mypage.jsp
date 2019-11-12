@@ -14,9 +14,9 @@
 			<button type="button" class="btn btn-warning" id="revise">수정</button>
 		</a>
 
-		<form action="${pageContext.request.contextPath }/delete/deleteJoin" class = "form-horizontal">
+		<form id="frm1" action="${pageContext.request.contextPath }/delete/deleteJoin" class = "form-horizontal">
 			<input type="hidden" name="member_uid" value="${login_member_uid }" />
-			<input type="submit" class="btn btn-danger" id="delete" value="회원탈퇴"/>
+			<input type="button" class="btn btn-danger" id="delete" value="회원탈퇴" onclick="deleteClick()"/>
 		</form>
 
 
@@ -26,12 +26,17 @@
 </div>
 
 <script>
-$(document).ready(function(){ $('#delete').click(function() { var result = confirm('정말로 지울건가요???'); 
 
-if(result) { yes location.replace('cm.jsp'); } else { //no 
-		} 
-	}); 
-});
+function deleteClick(){
+	var answer = confirm("정말로 지울꺼야?");
+	
+	if(answer){
+		// submit 실행
+		$("#frm1").submit();
+	} else {
+		// 아무것도 안하면 돼
+	}
+}
 
 </script>
 

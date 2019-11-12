@@ -3,6 +3,7 @@ package com.practice.contentmain.chickens.bhc;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,7 +40,7 @@ public class BhcController {
 							 @RequestParam("price")String price,
 							 @RequestParam("spicy")String spicy,
 							 @RequestParam("review")String review,
-							 @RequestParam("brand_uid")String brand_uid )
+							 @RequestParam("brand_uid")String brand_uid)
 	{
 		System.out.println(name);
 		System.out.println(price);
@@ -58,10 +59,40 @@ public class BhcController {
 		
 		
 		return "bhc";
+		
+		
 	}
 	
 	@RequestMapping("bhcRead")
 	public String bhcRead() {
+		
+		return "bhcRead";
+	}
+	
+	// update
+	
+	@RequestMapping("bhcUpdate")
+	public String bhcUpdate(@RequestParam("name") String name,
+							@RequestParam("price")String price,
+							@RequestParam("spicy")String spicy,
+							@RequestParam("review")String review,
+							@RequestParam("brand_uid")String brand_uid)
+	{
+		System.out.println(name);
+		System.out.println(price);
+		System.out.println(spicy);
+		System.out.println(review);
+		System.out.println(brand_uid);
+		
+		BhcVO vo = new BhcVO();
+		
+		vo.setBrand_uid(brand_uid);
+		vo.setName(name);
+		vo.setPrice(price);
+		vo.setReview(review);
+		vo.setSpicy(spicy);
+		
+		bService.bhcUpdate(vo);
 		
 		return "bhcRead";
 	}

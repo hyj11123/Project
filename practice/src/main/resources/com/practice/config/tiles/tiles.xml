@@ -54,11 +54,15 @@
         </definition>
         
         <definition name="bhc" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/bhc.jsp"/>
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/bhc/bhc.jsp"/>
         </definition>
         
           <definition name="insertMenu" extends="layout">
-           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/insertMenu.jsp"/>
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/bhc/insertMenu.jsp"/>
+        </definition>
+        
+        <definition name="updatebhc" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/bhc/updatebhc.jsp"/>
         </definition>
         
       	

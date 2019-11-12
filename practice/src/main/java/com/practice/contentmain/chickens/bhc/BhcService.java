@@ -23,7 +23,31 @@ public class BhcService {
 	//BhcSubmmit
 	public void bhcSubmit(BhcVO vo) {
 		
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
 		bDao.bhcSubmit(vo);
 		
 	}
+	
+	
+	//BhcUpdate
+	public void bhcUpdate(BhcVO vo) {
+		
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		bDao.bhcUpadte(vo);
+		
+		
+	}
+	
+	
+	
+	//BhcDelete
 }

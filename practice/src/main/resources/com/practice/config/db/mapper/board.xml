@@ -12,6 +12,7 @@
       FROM	T_BOARD	
 	</select>
 	
+	
 	<insert id="boardWrite" parameterType="boardVO">
 		INSERT INTO T_BOARD
 		(
