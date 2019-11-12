@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RequestMapping("brand")
@@ -26,7 +27,32 @@ public class BrandController {
 		model.addAttribute("brandList", list);
 		return "brand";
 	}
+
+
 	
 	
+	@RequestMapping("brandSubmit")
+	public String brandSubmit() 
+	{
+			
+			
+			return "brand";
+
+	}
 	
-}
+	@RequestMapping("editBrand")
+	public String editBrand() 
+	{
+			
+			return "brand";
+	}
+	
+	@RequestMapping("deleteBrand")
+	public String deleteBrand() 
+	{
+			
+			return "brand";
+	}
+	
+	}
+	

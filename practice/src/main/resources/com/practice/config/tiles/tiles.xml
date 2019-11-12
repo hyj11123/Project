@@ -65,5 +65,17 @@
            <put-attribute name="content" value="/WEB-INF/views/contentmain/chickenPage/bhc/updatebhc.jsp"/>
         </definition>
         
+        <definition name="insertBrand" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/brand/insertBrand.jsp"/>
+        </definition>
+        
+        <definition name="editBrand" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/brand/editBrand.jsp"/>
+        </definition>
+        
+        <definition name="deleteBrand" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/brand/deleteBrand.jsp"/>
+        </definition>
+        
       	
 </tiles-definitions>
