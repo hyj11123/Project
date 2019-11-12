@@ -66,10 +66,20 @@ public class BhcController {
 	@RequestMapping("bhcRead")
 	public String bhcRead() {
 		
+		
+		
 		return "bhcRead";
 	}
 	
+	
+	
+	
+	
+	
+	
 	// update
+	
+	
 	
 	@RequestMapping("bhcUpdate")
 	public String bhcUpdate(@RequestParam("name") String name,
