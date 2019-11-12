@@ -3,7 +3,6 @@ package com.practice.contentmain.chickens.bhc;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -108,9 +107,22 @@ public class BhcController {
 		bService.bhcUpdate(vo);
 		
 		
-		return "bhcRead";
+		return "bhc";
 	}
 	
 	// delete
+	
+	@RequestMapping("bhcDelete")
+	public String bhcDelete(@RequestParam("brand_uid")String brand_uid)
+	{
+		BhcVO vo = new BhcVO();
+		
+		vo.setBrand_uid(brand_uid);
+		
+		bService.delete(vo);
+		
+		return "bhc";
+		
+	}
 	
 }

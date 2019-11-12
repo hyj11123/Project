@@ -7,6 +7,7 @@
 
 <c:forEach items="${bList }" var="b">
 	<div>
+	<input type="checkbox" id="menuCB" /><br>
 	이름 : 	${b.name }<br>
 	가격 : 	${b.price }<br>
 	매운정도 : 	${b.spicy }

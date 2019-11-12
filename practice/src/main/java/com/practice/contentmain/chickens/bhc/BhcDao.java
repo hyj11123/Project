@@ -37,6 +37,6 @@ public class BhcDao {
 	// bhcDelete
 	
 	public void bhcdelete(BhcVO vo) {
-		sqlSessionTemplate.delete("bhc.bhcdelelte", vo);
+		sqlSessionTemplate.delete("bhc.bhcdelete", vo);
 	}
 }

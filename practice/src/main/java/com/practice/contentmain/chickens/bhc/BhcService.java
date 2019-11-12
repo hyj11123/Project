@@ -50,4 +50,9 @@ public class BhcService {
 	
 	
 	//BhcDelete
+	
+	public void delete(BhcVO vo) {
+		bDao.bhcdelete(vo);
+	}
+	
 }
