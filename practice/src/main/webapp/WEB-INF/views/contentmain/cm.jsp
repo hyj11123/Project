@@ -4,7 +4,7 @@
 
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-<a href="${pageContext.request.contextPath}/chicken/chickenPage">
+<a href="${pageContext.request.contextPath}/brand/brandPage">
 <img src="https://t1.daumcdn.net/liveboard/interbiz/724b01edcbeb44dfa3fe10a3dbbda51f.JPG" alt="..." class="img-rounded" width="252" height="230">
 <br />치킨</a>
 

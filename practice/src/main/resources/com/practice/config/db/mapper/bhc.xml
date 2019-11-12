@@ -11,13 +11,13 @@
 		PRICE,
 		SPICY,
 		REVIEW
-		FROM BHC
+		FROM MENU
 	</select>
 
 
 
 	<insert id="bhcSubmit" parameterType="BhcVO">
-		INSERT INTO BHC
+		INSERT INTO MENU
 		(
 		NAME,
 		PRICE,
