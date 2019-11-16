@@ -69,7 +69,27 @@ public class BhcController {
 		
 		return "bhcRead";
 	}
+
 	
+	@RequestMapping("bhcRead2")
+	public String bhcRead2(Model model) {
+		List<BhcVO> list = bService.bhcList();
+		
+		model.addAttribute("aList", list);
+		
+		System.out.println("read2");
+		System.out.println("read2");
+		System.out.println("read2");
+		System.out.println("read2");
+		System.out.println("read2");
+		System.out.println("read2");
+		System.out.println("read2");
+		System.out.println("read2");
+		
+		
+		
+		return "updatebhc";
+	}
 	
 	
 	
