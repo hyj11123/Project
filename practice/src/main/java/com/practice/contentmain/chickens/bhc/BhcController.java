@@ -125,4 +125,19 @@ public class BhcController {
 		
 	}
 	
+	
+	//check
+	
+	@RequestMapping("/bhcCheck")
+	public String bhccheck()
+	{
+		System.out.println("bhcCheck");
+		System.out.println("bhcCheck");
+		System.out.println("bhcCheck");
+		System.out.println("bhcCheck");
+		System.out.println("bhcCheck");
+		System.out.println("bhcCheck");
+		System.out.println("bhcCheck");
+		return "bhc";
+	}
 }

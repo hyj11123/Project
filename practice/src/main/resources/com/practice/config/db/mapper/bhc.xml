@@ -7,11 +7,12 @@
 
 	<select id="bhcList" resultType="BhcVO">
 
-		SELECT NAME,
-		PRICE,
-		SPICY,
-		REVIEW
-		FROM MENU
+		SELECT 	MENU_UID,
+			  	NAME,
+			   	PRICE,
+			   	SPICY,
+			   	REVIEW
+		  FROM 	MENU
 	</select>
 
 
@@ -44,7 +45,6 @@
 				,`PRICE` = #{PRICE}
 				,`SPICY` = #{SPICY}
 				,`REVIEW` = #{REVIEW}
-				,`BRAND_UID` = #{BRAND_UID}
 		  WHERE `MEUN_UID` = #{MEUN_UID}
 
 	</update>
