@@ -40,6 +40,20 @@ public class BrandController {
 
 	}
 	
+	@RequestMapping("addBrand")
+	public String addBrand(@RequestParam("name")String name,
+						   @RequestParam("type")String type) 
+	{
+			
+			BrandVO vo = new BrandVO();
+			vo.setName(name);
+			vo.setType(type);
+			
+			return "brand";
+
+	}
+	
+	
 	@RequestMapping("editBrand")
 	public String editBrand() 
 	{

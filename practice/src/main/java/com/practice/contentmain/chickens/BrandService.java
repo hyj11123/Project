@@ -18,4 +18,9 @@ public class BrandService {
 		
 		return list;
 	}
+	
+	public void insertBrand(BrandVO vo) {
+		
+		bDao.insertBrand(vo);
+	}
 }

@@ -19,4 +19,8 @@ public class BrandDao {
 		
 		return list;
 	}
+	public void insertBrand(BrandVO vo) {
+		
+		sqlSessionTemplate.insert("brand.insertBrand", vo);
+	}
 }
