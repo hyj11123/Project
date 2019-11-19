@@ -16,13 +16,13 @@
 	</select>
 
 	<select id="bhcList2" resultType="BhcVO">
-		SELECT	MENU_UID
-				,NAME
-				,PRICE
-				,SPICY
-				,REVIEW
+		SELECT	`MENU_UID`
+				,`NAME`
+				,`PRICE`
+				,`SPICY`
+				,`REVIEW`
 		  FROM  MENU
-		 WHERE  MENU_UID=#{menu_uid}
+		 WHERE  `MENU_UID` = #{menu_uid}
 	
 	
 	</select>
