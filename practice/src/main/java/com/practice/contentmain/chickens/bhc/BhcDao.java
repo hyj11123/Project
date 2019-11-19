@@ -27,7 +27,7 @@ public class BhcDao {
 	
 	public List<BhcVO> bhcList2(BhcVO vo){
 		
-		List<BhcVO> list = sqlSessionTemplate.selectList("bhc.bhcList2", vo);
+		List<BhcVO> list = sqlSessionTemplate.selectList("bhc.bhcList2",vo);
 		System.out.println("DAO");
 		System.out.println("DAO");
 		System.out.println("DAO");
@@ -48,6 +48,11 @@ public class BhcDao {
 	// bhcUpdate
 	public void bhcUpadte(BhcVO vo) {
 		sqlSessionTemplate.update("bhc.bhcupdate", vo);
+		System.out.println("DAO");
+		System.out.println("DAO");
+		System.out.println("DAO");
+		System.out.println("DAO");
+		
 	}
 	// bhcDelete
 	

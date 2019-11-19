@@ -89,14 +89,6 @@ public class BhcController {
 	public String bhcRead2(@RequestParam("uid")String uid,
 							Model model) {
 		
-		System.out.println(uid);
-		System.out.println(uid);
-		System.out.println(uid);
-		System.out.println(uid);
-		System.out.println(uid);
-		System.out.println(uid);
-		System.out.println(uid);
-		
 		BhcVO vo = new BhcVO();
 		
 		vo.setMenu_uid(uid);
@@ -113,30 +105,33 @@ public class BhcController {
 	
 	
 	@RequestMapping("bhcUpdate")
-	public String bhcUpdate(@RequestParam("name") String name,
+	public String bhcUpdate(@RequestParam("name")String name,
 							@RequestParam("price")String price,
 							@RequestParam("spicy")String spicy,
 							@RequestParam("review")String review,
+							@RequestParam("menu_uid")String menu_uid,
 							@RequestParam("brand_uid")String brand_uid)
 	{
 		System.out.println(name);
 		System.out.println(price);
 		System.out.println(spicy);
 		System.out.println(review);
+		System.out.println(menu_uid);
 		System.out.println(brand_uid);
 		
 		BhcVO vo = new BhcVO();
 		
-		vo.setBrand_uid(brand_uid);
+		vo.setMenu_uid(menu_uid);
 		vo.setName(name);
 		vo.setPrice(price);
 		vo.setReview(review);
 		vo.setSpicy(spicy);
+		vo.setBrand_uid(brand_uid);
 		
 		bService.bhcUpdate(vo);
 		
 		
-		return "bhc";
+		return "redirect:bhcPage";
 	}
 	
 	// delete

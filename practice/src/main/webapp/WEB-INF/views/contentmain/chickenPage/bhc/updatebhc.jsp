@@ -7,8 +7,6 @@
 
 
 
-	UID : <input type="text" value="${a.menu_uid}" readonly />
-		<br>
 	
 	NAME : <input type="text" name="name" value="${a.name }">
 		<br /> 
@@ -21,7 +19,8 @@
 	
 	REVIEW<input type="text" name="review" value="${a.review }">
 		<br />
-		<input type="hidden" name="brand_uid" value="4">
+		<input type="hidden" name="menu_uid" value="${a.menu_uid }">
+		<input type="hidden" name="brand_uid" value="${a.brand_uid }">
 		<br />
 
 		<input type="submit" value="메뉴 수정" />
