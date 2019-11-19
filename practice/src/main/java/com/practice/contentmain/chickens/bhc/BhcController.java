@@ -101,9 +101,10 @@ public class BhcController {
 		
 		vo.setMenu_uid(uid);
 		
-		bService.bhcList2(vo);
-
 		List<BhcVO> list = bService.bhcList2(vo);
+		
+		System.out.println();
+		
 		
 		model.addAttribute("aList", list);
 

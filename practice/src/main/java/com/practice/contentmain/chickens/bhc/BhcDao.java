@@ -27,7 +27,7 @@ public class BhcDao {
 	
 	public List<BhcVO> bhcList2(BhcVO vo){
 		
-		List<BhcVO> list = sqlSessionTemplate.selectList("bhc.bhcList2");
+		List<BhcVO> list = sqlSessionTemplate.selectList("bhc.bhcList2", vo);
 		System.out.println("DAO");
 		System.out.println("DAO");
 		System.out.println("DAO");

@@ -15,14 +15,14 @@
 		  FROM 	MENU
 	</select>
 
-	<select id="bhcList2" resultType="BhcVO">
-		SELECT	MENU_UID
-				,NAME
-				,PRICE
-				,SPICY
-				,REVIEW
+	<select id="bhcList2" resultType="BhcVO" parameterType="BhcVO">
+		SELECT	`MENU_UID`
+				,`NAME`
+				,`PRICE`
+				,`SPICY`
+				,`REVIEW`
 		  FROM  MENU
-		 WHERE  MENU_UID=#{menu_uid}
+		 WHERE  `MENU_UID` = #{menu_uid}
 	
 	
 	</select>
