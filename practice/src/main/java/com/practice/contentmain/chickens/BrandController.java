@@ -48,7 +48,7 @@ public class BrandController {
 			BrandVO vo = new BrandVO();
 			vo.setName(name);
 			vo.setType(type);
-			
+			System.out.println();
 			return "brand";
 
 	}
