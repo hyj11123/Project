@@ -15,7 +15,7 @@
 		  FROM 	MENU
 	</select>
 
-	<select id="bhcList2" resultType="BhcVO">
+	<select id="bhcList2" resultType="BhcVO" parameterType="BhcVO">
 		SELECT	`MENU_UID`
 				,`NAME`
 				,`PRICE`

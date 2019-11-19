@@ -10,16 +10,16 @@
 	UID : <input type="text" value="${a.menu_uid}" readonly />
 		<br>
 	
-	NAME : <input type="text" name="name">
+	NAME : <input type="text" name="name" value="${a.name }">
 		<br /> 
 	
-	PRICE : <input type="text" name="price">
+	PRICE : <input type="text" name="price" value="${a.price}">
 		<br /> 
 	
-	SPICY : <input type="text" name="spicy">
+	SPICY : <input type="text" name="spicy" value="${a.spicy} ">
 		<br /> 
 	
-	REVIEW<input type="text" name="review">
+	REVIEW<input type="text" name="review" value="${a.review }">
 		<br />
 		<input type="hidden" name="brand_uid" value="4">
 		<br />
