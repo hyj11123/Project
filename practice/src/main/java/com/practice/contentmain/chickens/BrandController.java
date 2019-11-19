@@ -36,7 +36,7 @@ public class BrandController {
 	{
 			
 			
-			return "brand";
+			return "insertBrand";
 
 	}
 	
