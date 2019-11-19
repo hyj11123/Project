@@ -20,6 +20,24 @@ public class BhcService {
 	return list;	
 	}
 	
+	public List<BhcVO> bhcList2(BhcVO vo){
+
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		
+		List<BhcVO> list = bDao.bhcList2(vo);
+		
+		return list;
+		
+		
+		
+	}
+	
+	
+	
 	//BhcSubmmit
 	public void bhcSubmit(BhcVO vo) {
 		

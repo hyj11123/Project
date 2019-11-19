@@ -7,13 +7,27 @@
 
 	<select id="bhcList" resultType="BhcVO">
 
-		SELECT NAME,
-		PRICE,
-		SPICY,
-		REVIEW
-		FROM MENU
+		SELECT 	MENU_UID,
+			  	NAME,
+			   	PRICE,
+			   	SPICY,
+			   	REVIEW
+		  FROM 	MENU
 	</select>
 
+	<select id="bhcList2" resultType="BhcVO">
+		SELECT	MENU_UID
+				,NAME
+				,PRICE
+				,SPICY
+				,REVIEW
+		  FROM  MENU
+		 WHERE  MENU_UID=#{menu_uid}
+	
+	
+	</select>
+	
+	
 
 
 	<insert id="bhcSubmit" parameterType="BhcVO">
@@ -44,7 +58,6 @@
 				,`PRICE` = #{PRICE}
 				,`SPICY` = #{SPICY}
 				,`REVIEW` = #{REVIEW}
-				,`BRAND_UID` = #{BRAND_UID}
 		  WHERE `MEUN_UID` = #{MEUN_UID}
 
 	</update>
@@ -56,6 +69,7 @@
 	 WHERE	`MEUN_UID` = #{MEUN_uid}
 	</delete>
 	  
+	
 	
 	
 
