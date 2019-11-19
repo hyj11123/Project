@@ -12,7 +12,7 @@
    
    <input type="hidden" name="brand_uid" value="4"> <br /> 
    
-   <form>
+   <form action="">
    <input type="submit" value="브랜드 등록" />
    
    </form>
