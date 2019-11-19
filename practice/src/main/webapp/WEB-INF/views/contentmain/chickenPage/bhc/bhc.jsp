@@ -26,10 +26,8 @@
 			<tr>
 				<td>
 
-					<form id="update" action="${pageContext.request.contextPath }/bhc/bhcRead2">
 						<button type="submit" class="btn btn-warning"
 							onclick="clickUpdateBtn(${b.menu_uid})">메뉴수정</button>
-					</form>
 
 					<form action="${pageContext.request.contextPath }/bhc/bhc">
 						<input type="submit" class="btn btn-danger" id="js-deleteBtn"
@@ -73,7 +71,7 @@
 	const addBtn = document.getElementById("js-addBtn");
 	
 	function clickUpdateBtn(uid){
-		console.log(uid);
+		location.href= "${pageContext.request.contextPath }/bhc/bhcRead2?uid=" + uid;
 		
 	}
 	

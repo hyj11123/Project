@@ -71,25 +71,7 @@ public class BhcController {
 	}
 
 	
-	@RequestMapping("bhcRead2")
-	public String bhcRead2(Model model) {
-		List<BhcVO> list = bService.bhcList();
-		
-		model.addAttribute("aList", list);
-		
-		System.out.println("read2");
-		System.out.println("read2");
-		System.out.println("read2");
-		System.out.println("read2");
-		System.out.println("read2");
-		System.out.println("read2");
-		System.out.println("read2");
-		System.out.println("read2");
-		
-		
-		
-		return "updatebhc";
-	}
+
 	
 	
 	
@@ -99,6 +81,32 @@ public class BhcController {
 	// update
 	@RequestMapping("updatebhc")
 	public String updatebhc() {
+		return "updatebhc";
+	}
+	
+	
+	@RequestMapping("bhcRead2")
+	public String bhcRead2(@RequestParam("uid")String uid,
+							Model model) {
+		
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		
+		BhcVO vo = new BhcVO();
+		
+		vo.setMenu_uid(uid);
+		
+		bService.bhcList2(vo);
+
+		List<BhcVO> list = bService.bhcList2(vo);
+		
+		model.addAttribute("aList", list);
+
 		return "updatebhc";
 	}
 	

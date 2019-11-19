@@ -23,6 +23,21 @@ public class BhcDao {
 		return list;
 
 	}
+	
+	
+	public List<BhcVO> bhcList2(BhcVO vo){
+		
+		List<BhcVO> list = sqlSessionTemplate.selectList("bhc.bhcList2");
+		System.out.println("DAO");
+		System.out.println("DAO");
+		System.out.println("DAO");
+		System.out.println("DAO");
+		System.out.println("DAO");
+		System.out.println("DAO");
+		System.out.println("DAO");
+		
+		return list;
+	}
 
 	// bhcSubmit
 	public void bhcSubmit(BhcVO vo) {
