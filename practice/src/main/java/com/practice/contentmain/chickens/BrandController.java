@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("brand")
 @Controller
 public class BrandController {
+	
+	String nullImg = "http://blogfiles.naver.net/MjAxODExMjhfMjc2/MDAxNTQzNDA3NDIzNjk4.4mfvTo5u2uRwNOVDa6MkR3U2VPVScnx032ONVSSqKHUg.-NCmObwXHxF0cEeGdvxUMbSI0aj-Nnm8RwIGRPWlRiQg.JPEG.scenar25/99E7A94F5BFE61D512BAE6.jpeg";
 
 	@Resource(name ="brand_Service")
 	private BrandService bService;
@@ -42,14 +44,18 @@ public class BrandController {
 	
 	@RequestMapping("addBrand")
 	public String addBrand(@RequestParam("name")String name,
-						   @RequestParam("type")String type) 
+						   @RequestParam("type")String type,
+						   @RequestParam(value="path", defaultValue="http://blogfiles.naver.net/MjAxODExMjhfMjc2/MDAxNTQzNDA3NDIzNjk4.4mfvTo5u2uRwNOVDa6MkR3U2VPVScnx032ONVSSqKHUg.-NCmObwXHxF0cEeGdvxUMbSI0aj-Nnm8RwIGRPWlRiQg.JPEG.scenar25/99E7A94F5BFE61D512BAE6.jpeg")String path) 
 	{
 			
 			BrandVO vo = new BrandVO();
 			vo.setName(name);
 			vo.setType(type);
+			vo.setPath(path);
 		
-			return "brand";
+			bService.insertBrand(vo);
+			
+			return "redirect:brandPage";
 
 	}
 	

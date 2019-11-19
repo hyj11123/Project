@@ -14,17 +14,20 @@
 	</select>
 
 	
-	<insert id = "insertBrand" parameterType="BrandVO">
+	<insert id="insertBrand" parameterType="BrandVO">
 	
 	INSERT INTO BRAND
 		(
 			NAME,
-			TYPE
+			TYPE,
+			PATH
 		)
 		VALUES
 		(
 			#{name},
-			#{type}
+			#{type},
+			#{path}
+			
 		)
 	</insert>
 </mapper>
