@@ -14,7 +14,7 @@
 	</select>
 
 	
-	<insert id="insertBrand" parameterType="BrandVO">
+	<insert id="insertBrand" parameterType="brandVO">
 	
 	INSERT INTO BRAND
 		(
@@ -30,5 +30,21 @@
 			
 		)
 	</insert>
+	
+	<select id="selectList02" resultType="brandVO" parameterType="string">
+		SELECT 	BRAND_UID,
+				NAME,
+				TYPE,
+				PATH
+		  FROM	BRAND
+		 WHERE	BRAND_UID = #{brand_uid}
+	</select>
+	
+	<update id="updateBrand" parameterType="brandVO">
+		UPDATE	BRAND 
+    	   SET	`NAME` = #{name},	
+		        `TYPE` = #{type}
+         WHERE	BRAND_UID = #{brand_uid}
+	</update>
 </mapper>
 	

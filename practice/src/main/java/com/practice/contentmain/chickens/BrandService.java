@@ -23,4 +23,16 @@ public class BrandService {
 		
 		bDao.insertBrand(vo);
 	}
+	
+	public List<BrandVO> editBrand(String brand_uid) {
+		
+		List<BrandVO> list = bDao.editBrand(brand_uid);
+		
+		return list;
+		
+	}
+	public void updateBrand(BrandVO vo) {
+		
+		bDao.updateBrand(vo);
+	}
 }

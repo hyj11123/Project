@@ -19,8 +19,21 @@ public class BrandDao {
 		
 		return list;
 	}
+	
 	public void insertBrand(BrandVO vo) {
 		
 		sqlSessionTemplate.insert("brand.insertBrand", vo);
+	}
+	
+	public List<BrandVO> editBrand(String brand_uid) {
+		
+		List<BrandVO> list = sqlSessionTemplate.selectList("brand.selectList02", brand_uid);
+		
+		return list;
+	}
+	
+	public void updateBrand(BrandVO vo) {
+		
+		sqlSessionTemplate.update("brand.updateBrand", vo);
 	}
 }

@@ -60,11 +60,34 @@ public class BrandController {
 	}
 	
 	
-	@RequestMapping("editBrand")
-	public String editBrand() 
+	@RequestMapping("/editBrand")
+	public String editBrand(@RequestParam("uid")String brand_uid,
+							Model model) 
 	{
+			List<BrandVO> list = bService.editBrand(brand_uid);
 			
-			return "brand";
+			model.addAttribute("elist", list);
+			
+			return "editBrand";
+	}
+	
+	@RequestMapping("/updateBrand")
+	public String updateBrand(@RequestParam("name")String name,
+							  @RequestParam("type")String type,
+							  @RequestParam("path")String path,
+							  @RequestParam("brand_uid")String brand_uid)
+	{
+		
+		
+
+			BrandVO vo = new BrandVO();
+			vo.setName(name);
+			vo.setType(type);
+			vo.setPath(path);
+			vo.setBrand_uid(brand_uid);
+			
+			bService.updateBrand(vo);
+			return "redirect:brandPage";
 	}
 	
 	@RequestMapping("deleteBrand")
