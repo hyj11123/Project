@@ -50,6 +50,19 @@ public class Board_Controller {
 		return "boardList";
 	}
 	
+	// readBoard
+	@RequestMapping("readBoard")
+	public String readBoard(@RequestParam("title")String title
+						   ,@RequestParam("author")String author) {
+		
+		System.out.println(title);
+		System.out.println(author);
+		
+		return "boardRead";
+	}
+	
+	
+	
 	// updateBoard
 	
 	// deleteBoard

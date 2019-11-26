@@ -77,5 +77,10 @@
            <put-attribute name="content" value="/WEB-INF/views/brand/deleteBrand.jsp"/>
         </definition>
         
+        
+        <definition name="boardRead" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/board/boardRead.jsp"/>
+        </definition>
+        
       	
 </tiles-definitions>

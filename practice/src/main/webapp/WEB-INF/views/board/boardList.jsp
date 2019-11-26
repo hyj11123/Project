@@ -19,10 +19,11 @@
    						<th>작성자</th>
    					</tr>
    				</thead>
-   					
+
    				<tbody>
    					<c:forEach items="${bList}" var="b">
-   						<tr>
+   						<tr id="page">
+   							<td> <a href="보낼 곳"> ${b.t_title} </a>  </td>
    							<td>${b.t_uid }</td>
    							<td>${b.t_title }</td>
    							<td>${b.t_author }</td>
@@ -31,10 +32,10 @@
    					</c:forEach>
    				</tbody>
    			</table>
-   			
-   			<button type="button" class="createBtn" id="createBtn" name="createBtn" onclick="create()">글 작성</button>
-   			<button type="button" class="deleteBtn" id="deleteBtn" name="deleteBtn" onclick="delete()">글 삭제</button>
-   			
+   			<c:if test="${!empty login_id }">
+   				<button type="button" class="createBtn" id="createBtn" name="createBtn" onclick="create()">글 작성</button>
+   				<button type="button" class="deleteBtn" id="deleteBtn" name="deleteBtn" onclick="delete()">글 삭제</button>
+   			</c:if>
    		</div>
    		
    		<div class="col-md-2"></div>
@@ -49,6 +50,13 @@
    	function create(){
    		location.href="moveWritePage";
    	}
+   	
+   	
+//	function read(uid){
+//		location.href= "${pageContext.request.contextPath }/board/boardRead?uid=" + uid;
+//		
+//	}
+
    	
    	</script>
    	
