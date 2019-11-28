@@ -2,6 +2,16 @@ package com.practice.contentmain.chickens.bhc;
 
 public class BhcVO {
 
+		private String uid;
+	
+		public String getUid() {
+			return uid;
+		}
+
+		public void setUid(String uid) {
+			this.uid = uid;
+		}
+
 		private String menu_uid;
 	
 		public String getMenu_uid() {

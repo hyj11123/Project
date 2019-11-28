@@ -137,15 +137,25 @@ public class BhcController {
 	// delete
 	
 	@RequestMapping("bhcDelete")
-	public String bhcDelete(@RequestParam("brand_uid")String brand_uid)
+	public String bhcDelete(@RequestParam("uid")String uid)
 	{
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+		System.out.println(uid);
+
+		
 		BhcVO vo = new BhcVO();
 		
-		vo.setBrand_uid(brand_uid);
+		vo.setUid(uid);
 		
-		bService.delete(vo);
+		bService.bhcdelete(vo);
 		
-		return "bhc";
+		return "redirect:bhcPage";
+		
+		
 		
 	}
 	

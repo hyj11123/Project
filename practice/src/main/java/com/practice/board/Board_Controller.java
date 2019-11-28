@@ -35,19 +35,22 @@ public class Board_Controller {
 	
 	@RequestMapping("wirteBoard")
 	public String wirteBoard( @RequestParam("title")String title
-							, @RequestParam("author")String author){
+							, @RequestParam("author")String author
+							, @RequestParam("content")String content){
 		
 		System.out.println(title);
 		System.out.println(author);
+		System.out.println(content);
 		
 		BoardVO vo = new BoardVO();
-		vo.setT_title(title);
-		vo.setT_author(author);
+		vo.setB_title(title);
+		vo.setB_author(author);
+		vo.setB_content(content);
 		
 		bSerivce.wirteBoard(vo);
 	
 		
-		return "boardList";
+		return "redirect:boardList";
 	}
 	
 	// readBoard
@@ -61,22 +64,28 @@ public class Board_Controller {
 		return "boardRead";
 	}
 	
+	@RequestMapping("input")
+	public String input() {
+		
+		
+		return "boardRead";
+	}
 	
 	
 	// updateBoard
 	
 	// deleteBoard
 	
-	public String deleteBoard(@RequestParam("T_uid")String t_uid, HttpSession session)
+	public String deleteBoard(@RequestParam("B_uid")String b_uid, HttpSession session)
 	{
 		BoardVO vo = new BoardVO();
-		vo.setT_uid(t_uid);
+		vo.setB_uid(b_uid);
 		
 		bSerivce.deleteBoard(vo);
 		
 
 		
-		return "boardList";
+		return "redirect:boardList";
 	}
 
 }

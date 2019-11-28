@@ -2,28 +2,35 @@ package com.practice.board;
 
 public class BoardVO {
 
-	private String t_uid;
-	private String t_title;
-	private String t_author;
+	private String b_uid;
+	private String b_title;
+	private String b_author;
+	private	String b_content;
+	public String getB_content() {
+		return b_content;
+	}
+	public void setB_content(String b_content) {
+		this.b_content = b_content;
+	}
+	public String getB_uid() {
+		return b_uid;
+	}
+	public void setB_uid(String b_uid) {
+		this.b_uid = b_uid;
+	}
+	public String getB_title() {
+		return b_title;
+	}
+	public void setB_title(String b_title) {
+		this.b_title = b_title;
+	}
+	public String getB_author() {
+		return b_author;
+	}
+	public void setB_author(String b_author) {
+		this.b_author = b_author;
+	}
 	
-	public String getT_uid() {
-		return t_uid;
-	}
-	public void setT_uid(String t_uid) {
-		this.t_uid = t_uid;
-	}
-	public String getT_title() {
-		return t_title;
-	}
-	public void setT_title(String t_title) {
-		this.t_title = t_title;
-	}
-	public String getT_author() {
-		return t_author;
-	}
-	public void setT_author(String t_author) {
-		this.t_author = t_author;
-	}
-	
+
 	
 }

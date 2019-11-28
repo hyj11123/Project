@@ -69,7 +69,12 @@ public class BhcService {
 	
 	//BhcDelete
 	
-	public void delete(BhcVO vo) {
+	public void bhcdelete(BhcVO vo) {
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
 		bDao.bhcdelete(vo);
 	}
 	

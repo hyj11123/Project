@@ -57,6 +57,13 @@ public class BhcDao {
 	// bhcDelete
 	
 	public void bhcdelete(BhcVO vo) {
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		
 		sqlSessionTemplate.delete("bhc.bhcdelete", vo);
 	}
 }

@@ -6,32 +6,38 @@
 
 	<select id="boardAllList" resultType="boardVO">
 	
-	SELECT 	T_UID,
-			T_TITLE,
-			T_AUTHOR
-      FROM	T_BOARD	
+	SELECT 	B_UID,
+			B_TITLE,
+			B_AUTHOR
+      FROM	BOARD	
 	</select>
 	
 	
 	<insert id="boardWrite" parameterType="boardVO">
-		INSERT INTO T_BOARD
+		INSERT INTO BOARD
 		(
-			T_TITLE,
-			T_AUTHOR
+			B_TITLE,
+			B_AUTHOR,
+			B_CONTENT
 		)
 		VALUES
 		(
-			#{t_title},
-			#{t_author}
+			#{b_title},
+			#{b_author},
+			#{b_content}
 		)
 		
 	</insert>
 	
+	
+	
+	
+	
 	<delete id="boardDelete" parameterType="boardVO">
 	
 	DELETE	
-	  FROM	`T_BOARD`
-	 WHERE	`T_UID` = #{T_UID}
+	  FROM	`B_BOARD`
+	 WHERE	`B_UID` = #{B_UID}
 	
 	</delete>
 

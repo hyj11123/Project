@@ -28,11 +28,13 @@
 
 						<button type="submit" class="btn btn-warning"
 							onclick="clickUpdateBtn(${b.menu_uid})">메뉴수정</button>
+							
+							
 
-					<form action="${pageContext.request.contextPath }/bhc/bhc">
-						<input type="submit" class="btn btn-danger" id="js-deleteBtn"
-							value="메뉴삭제" />
-					</form>
+						<button type="submit" class="btn btn-danger" id="js-deleteBtn" 
+						
+							onclick="clickDelete(${b.menu_uid})" > 메뉴삭제 </button>
+
 
 
 				</td>
@@ -78,6 +80,19 @@
 
 	function next() {
 		location.href = "/bhc/insertMenu";
+	}
+	
+	function clickDelete(uid){
+
+			var answer = confirm("정말로 지울꺼야?");
+			
+			if(answer){
+				// submit 실행
+				location.href = "${pageContext.request.contextPath }/bhc/bhcDelete?uid=" + uid;
+			} else {
+				// 아무것도 안하면 돼
+			}
+		
 	}
 
 	addBtn.addEventListener("click", next);

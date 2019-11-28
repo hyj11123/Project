@@ -69,7 +69,7 @@
 	
 	DELETE	
 	  FROM	`MENU`
-	 WHERE	`MENU_UID` = #{menu_uid}
+	 WHERE	`MENU_UID` = #{uid}
 	</delete>
 	  
 	

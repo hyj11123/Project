@@ -22,8 +22,7 @@
 
    				<tbody>
    					<c:forEach items="${bList}" var="b">
-   						<tr id="page">
-   							<td> <a href="보낼 곳"> ${b.t_title} </a>  </td>
+   						<tr id="page" onclick="input()">
    							<td>${b.t_uid }</td>
    							<td>${b.t_title }</td>
    							<td>${b.t_author }</td>
@@ -56,7 +55,15 @@
 //		location.href= "${pageContext.request.contextPath }/board/boardRead?uid=" + uid;
 //		
 //	}
-
+	
+	function input(){
+		location.href ="${pageContext.request.contextPath }/board/input?uid=" + uid;
+	}
+	
+function test(){
+	alert("asdfasdfasd");
+}
+	
    	
    	</script>
    	
