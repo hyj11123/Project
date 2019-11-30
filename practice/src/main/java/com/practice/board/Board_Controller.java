@@ -10,6 +10,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.practice.contentmain.chickens.bhc.BhcVO;
+
 @RequestMapping("board")
 @Controller
 public class Board_Controller {
@@ -65,20 +67,69 @@ public class Board_Controller {
 	}
 	
 	@RequestMapping("input")
-	public String input() {
+	public String input(@RequestParam("uid")String uid
+						,Model model) {
+		
+		System.out.println(uid);
+		List<BoardVO> list = bSerivce.getBoardById(uid);
+	
+		
+		
+		model.addAttribute("bList", list);
 		
 		
 		return "boardRead";
 	}
 	
+	@RequestMapping("input2")
+	public String input2(@RequestParam("uid")String uid
+						,Model model)
+	{
+		System.out.println(uid);
+		List<BoardVO> list = bSerivce.getBoardById(uid);
+		
+		model.addAttribute("bList",list);
+		
+		return "boardUpdate";
+	}
+	
+	
 	
 	// updateBoard
-	
-	// deleteBoard
-	
-	public String deleteBoard(@RequestParam("B_uid")String b_uid, HttpSession session)
+	@RequestMapping("clickUpdate")
+	public String clickUpdate(@RequestParam("uid")String b_uid
+							  ,@RequestParam("title")String b_title
+							  ,@RequestParam("content")String b_content) 
 	{
 		BoardVO vo = new BoardVO();
+		
+		System.out.println("controller");
+		System.out.println("controller");
+		System.out.println("controller");
+		System.out.println("controller");
+		System.out.println("controller");
+		
+		vo.setB_uid(b_uid);
+		vo.setB_title(b_title);
+		vo.setB_content(b_content);
+		
+		bSerivce.updateBoard(vo);
+		
+		return "redirect:boardList";
+	}
+	// deleteBoard
+	
+	@RequestMapping("deleteBoard")
+	public String deleteBoard(@RequestParam("uid")String b_uid)
+	{
+		BoardVO vo = new BoardVO();
+		
+		System.out.println("controller");
+		System.out.println("controller");
+		System.out.println("controller");
+		System.out.println("controller");
+		System.out.println("controller");
+		
 		vo.setB_uid(b_uid);
 		
 		bSerivce.deleteBoard(vo);

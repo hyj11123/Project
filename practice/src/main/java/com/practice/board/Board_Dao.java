@@ -16,7 +16,7 @@ public class Board_Dao {
 	//boardList
 	public List<BoardVO> boardList(){
 		
-		List<BoardVO> list = sqlSessionTemplate.selectList("board.boardAllList");
+		List<BoardVO> list = sqlSessionTemplate.selectList("board.boardList");
 		
 		return list;
 		
@@ -30,11 +30,44 @@ public class Board_Dao {
 			
 	}
 	
+	//input
+	
+	public List<BoardVO> getBoardById(String uid){
+		
+		List<BoardVO> list= sqlSessionTemplate.selectList("board.getBoardById", uid);
+		
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		
+		
+		
+		return list;
+	}
+	
+	
 	// updateBoard
+	
+	public void updateBoard(BoardVO vo) {
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		
+		sqlSessionTemplate.update("board.boardUpdate",vo);
+	}
 	
 	// deleteBoard
 	
 	public void deleteBoard(BoardVO vo) {
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
+		System.out.println("Dao");
 		
 		sqlSessionTemplate.delete("board.boardDelete", vo);
 		

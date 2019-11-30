@@ -130,7 +130,6 @@ public class BhcController {
 		
 		bService.bhcUpdate(vo);
 		
-		
 		return "redirect:bhcPage";
 	}
 	

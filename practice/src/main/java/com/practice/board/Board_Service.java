@@ -26,12 +26,43 @@ public class Board_Service {
 		bDao.wirteBoard(vo);
 	}
 	
+	//input
+	public List<BoardVO> getBoardById(String uid){
+	
+		List<BoardVO> list = bDao.getBoardById(uid);
+		
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		
+		
+		
+		return list;
+	
+	}
+	
 	// updateBoard
+	
+	public void updateBoard(BoardVO vo) {
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		bDao.updateBoard(vo);
+		
+	}
 	
 	// deleteBoard
 	
 	public void deleteBoard(BoardVO vo) {
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
+		System.out.println("Service");
 		
-		bDao.deleteBoard(vo);;
+		bDao.deleteBoard(vo);
 	}
 }

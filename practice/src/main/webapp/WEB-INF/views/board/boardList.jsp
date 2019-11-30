@@ -22,10 +22,10 @@
 
    				<tbody>
    					<c:forEach items="${bList}" var="b">
-   						<tr id="page" onclick="input()">
-   							<td>${b.t_uid }</td>
-   							<td>${b.t_title }</td>
-   							<td>${b.t_author }</td>
+   						<tr id="page" onclick="input(${b.b_uid })">
+   							<td>${b.b_uid }</td>
+   							<td>${b.b_title }</td>
+   							<td>${b.b_author }</td>
    						</tr>
    					
    					</c:forEach>
@@ -33,7 +33,6 @@
    			</table>
    			<c:if test="${!empty login_id }">
    				<button type="button" class="createBtn" id="createBtn" name="createBtn" onclick="create()">글 작성</button>
-   				<button type="button" class="deleteBtn" id="deleteBtn" name="deleteBtn" onclick="delete()">글 삭제</button>
    			</c:if>
    		</div>
    		
@@ -56,7 +55,7 @@
 //		
 //	}
 	
-	function input(){
+	function input(uid){
 		location.href ="${pageContext.request.contextPath }/board/input?uid=" + uid;
 	}
 	
