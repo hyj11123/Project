@@ -18,5 +18,7 @@ public class PizzaDao {
 		List<PizzaVO> list = sqlSessionTemplate.selectList("pizza.pizzaList", type);
 		
 		return list;
+		
+		
 	}
 }
