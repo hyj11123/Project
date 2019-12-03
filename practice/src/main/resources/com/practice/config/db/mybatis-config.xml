@@ -19,6 +19,6 @@
 	  		<mapper resource="com/practice/config/db/mapper/board.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/bhc.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/brand.xml"/>
-	  		<mapper resource="com/practice/config/db/mapper/domino.xml"/>
+	  		<mapper resource="com/practice/config/db/mapper/pizza.xml"/>
 	  </mappers> 
 </configuration>
