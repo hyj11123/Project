@@ -57,7 +57,7 @@ public class BhcController {
 		bService.bhcSubmit(vo);
 		
 		
-		return "bhc";
+		return "redirect:bhcPage";
 		
 		
 	}
