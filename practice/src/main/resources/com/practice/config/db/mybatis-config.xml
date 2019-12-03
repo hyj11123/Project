@@ -9,6 +9,7 @@
 		   	<typeAlias  alias="boardVO"  type="com.practice.board.BoardVO"/>
 		   	<typeAlias  alias="BhcVO"  	 type="com.practice.contentmain.chickens.bhc.BhcVO"/>
 		   	<typeAlias  alias="brandVO"   type="com.practice.contentmain.chickens.BrandVO"/>
+		   	<typeAlias  alias="pizzaVO"   type="com.practice.contentmain.pizzas.PizzaVO"/>
 	  </typeAliases>
 	  <mappers>
 	  		<mapper resource="com/practice/config/db/mapper/test.xml"/>
@@ -18,5 +19,6 @@
 	  		<mapper resource="com/practice/config/db/mapper/board.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/bhc.xml"/>
 	  		<mapper resource="com/practice/config/db/mapper/brand.xml"/>
+	  		<mapper resource="com/practice/config/db/mapper/domino.xml"/>
 	  </mappers> 
 </configuration>

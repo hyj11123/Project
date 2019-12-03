@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="pizza">
+
+	<select id ="pizzaList" resultType = "PizzaVO">
+	
+		SELECT
+				BRAND_UID,
+			  	NAME,
+			   	PRICE,
+			   	SPICY,
+			   	REVIEW
+		  FROM	MENU
+		 WHERE	BRAND_UID = 2
+	</select>
+</mapper>

@@ -13,7 +13,7 @@
 
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-<a>
+<a href="${pageContext.request.contextPath }/pizza/pizzaPage">
 <img src="https://cdn.dominos.co.kr/admin/upload/goods/20180827_6UbajoYY.jpg" alt="..." class="img-rounded" width="252" height="230">
 <br />피자</a>
 <br><br><br>
