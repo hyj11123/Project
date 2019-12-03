@@ -34,7 +34,8 @@
 						<button type="submit" class="btn btn-danger" id="js-deleteBtn" 
 						
 							onclick="clickDelete(${b.menu_uid})" > 메뉴삭제 </button>
-
+						
+						
 
 
 				</td>
@@ -100,7 +101,6 @@
 	//----------------------------------------------------------------
 
 
-	
 
 	
 	
