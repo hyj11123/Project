@@ -5,10 +5,8 @@
   
 <c:forEach items="${pizzaList }" var="pizza">
 
-	<a href ="${pageContext.request.contextPath }/pizza/pizzaPage">${pizza.name }</a>
-	<div>${pizza.price }</div>
-	<div>${pizza.spicy }</div>
-	<div>${pizza.review }</div>
+	<a href ="${pageContext.request.contextPath }/pizza/pizzaPage"><img src="${pizza.path }"/> </a>
+	
 	
 </c:forEach>
 

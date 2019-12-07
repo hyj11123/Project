@@ -20,18 +20,20 @@
 	
 	
 	<insert id = "insertPizza" parameterType="PizzaVO">
-	
-	INSERT INTO MENU
-	(
-		NAME,
-		PRICE,
-		SPICY
-	)
-	VALUES
-	(
-		#{name},
-		#{price},
-		#{spicy}
-	)
+
+	INSERT INTO BRAND
+		(
+			NAME,
+			TYPE,
+			PATH
+		)
+		VALUES
+		(
+			#{name},
+			#{type},
+			#{path}
+			
+		)
+		
 	</insert>
 </mapper>

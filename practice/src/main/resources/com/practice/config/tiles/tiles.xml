@@ -90,5 +90,11 @@
            <put-attribute name="content" value="/WEB-INF/views/contentmain/pizzaPage/pizzaPage.jsp"/>
         </definition>
         
+        <definition name="insertPizza" extends="layout">
+           <put-attribute name="content" value="/WEB-INF/views/contentmain/pizzaPage/insertPizza.jsp"/>
+        </definition>
+        
+        
+        
       	
 </tiles-definitions>

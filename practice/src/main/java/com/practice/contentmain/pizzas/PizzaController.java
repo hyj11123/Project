@@ -37,15 +37,15 @@ public class PizzaController {
 	@RequestMapping("addPizza")
 	public String addPizza(
 							@RequestParam("name")String name,
-							@RequestParam("price")String price,
-							@RequestParam("spicy")String spicy) {
+							@RequestParam("type")String type,
+							@RequestParam("path")String path) {
 		
 		PizzaVO vo = new PizzaVO();
 		vo.setName(name);
-		vo.setPrice(price);
-		vo.setSpicy(spicy);
+		vo.setType(type);
+		vo.setPath(path);
 		
-		pService.addPizza(vo);
+		pService.insertPizza(vo);
 		
 		return "redirect:pizzaPage";
 	}

@@ -3,25 +3,20 @@ package com.practice.contentmain.pizzas;
 public class PizzaVO {
 
 		
-	private String uid;
-	
-	private String name;
-	
-	private String price;
-	
-	private String spicy;
-	
-	private String review;
-	
 	private String brand_uid;
 	
+	private String name;
 
-	public String getUid() {
-		return uid;
+	private String type;
+	
+	private String path;
+
+	public String getBrand_uid() {
+		return brand_uid;
 	}
 
-	public void setUid(String uid) {
-		this.uid = uid;
+	public void setBrand_uid(String brand_uid) {
+		this.brand_uid = brand_uid;
 	}
 
 	public String getName() {
@@ -32,36 +27,23 @@ public class PizzaVO {
 		this.name = name;
 	}
 
-	public String getPrice() {
-		return price;
+	public String getType() {
+		return type;
 	}
 
-	public void setPrice(String price) {
-		this.price = price;
+	public void setType(String type) {
+		this.type = type;
 	}
 
-	public String getSpicy() {
-		return spicy;
+	public String getPath() {
+		return path;
 	}
 
-	public void setSpicy(String spicy) {
-		this.spicy = spicy;
+	public void setPath(String path) {
+		this.path = path;
 	}
 
-	public String getReview() {
-		return review;
-	}
 
-	public void setReview(String review) {
-		this.review = review;
-	}
 
-	public String getBrand_uid() {
-		return brand_uid;
-	}
-
-	public void setBrand_uid(String brand_uid) {
-		this.brand_uid = brand_uid;
-	}
 	
 }
