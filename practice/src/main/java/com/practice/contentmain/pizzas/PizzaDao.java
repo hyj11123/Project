@@ -21,4 +21,8 @@ public class PizzaDao {
 		
 		
 	}
+	
+	public void addPizza(PizzaVO vo) {
+		sqlSessionTemplate.insert("pizza.insertPizza", vo);
+	}
 }

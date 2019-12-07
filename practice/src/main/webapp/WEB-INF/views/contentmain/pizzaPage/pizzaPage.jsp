@@ -11,4 +11,10 @@
 	<div>${pizza.review }</div>
 	
 </c:forEach>
+
+<br  />
+
+<form action = "/pizza/pizzaSubmit">
+ <button type = "submit" value = "피자 등록" class = "btn btn-primary"> 피자등록 </button>
+</form>
     

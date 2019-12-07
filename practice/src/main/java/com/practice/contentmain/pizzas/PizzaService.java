@@ -18,5 +18,9 @@ public class PizzaService {
 		
 		return list;
 	}
+	
+	public void addPizza(PizzaVO vo) {
+		pDao.addPizza(vo);
+	}
 		
 }

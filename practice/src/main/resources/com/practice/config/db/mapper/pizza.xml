@@ -17,4 +17,21 @@
 		  FROM	MENU
 		 WHERE	BRAND_UID = 2
 	</select>
+	
+	
+	<insert id = "insertPizza" parameterType="PizzaVO">
+	
+	INSERT INTO MENU
+	(
+		NAME,
+		PRICE,
+		SPICY
+	)
+	VALUES
+	(
+		#{name},
+		#{price},
+		#{spicy}
+	)
+	</insert>
 </mapper>
