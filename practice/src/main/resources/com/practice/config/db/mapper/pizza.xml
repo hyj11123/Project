@@ -31,4 +31,23 @@
 		 WHERE	BRAND_UID = 2
 	
 	</select>
+	
+	
+	<insert id = "insertPizza" parameterType="PizzaVO">
+
+	INSERT INTO BRAND
+		(
+			NAME,
+			TYPE,
+			PATH
+		)
+		VALUES
+		(
+			#{name},
+			#{type},
+			#{path}
+			
+		)
+		
+	</insert>
 </mapper>

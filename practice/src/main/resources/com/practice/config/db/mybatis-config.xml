@@ -8,7 +8,7 @@
 		   	<typeAlias  alias="memberVO" type="com.practice.signin.MemberVO"/>
 		   	<typeAlias  alias="boardVO"  type="com.practice.board.BoardVO"/>
 		   	<typeAlias  alias="BhcVO"  	 type="com.practice.contentmain.chickens.bhc.BhcVO"/>
-		   	<typeAlias  alias="brandVO"   type="com.practice.contentmain.chickens.BrandVO"/>
+		   	<typeAlias  alias="brandVO"   type="com.practice.contentmain.brand.BrandVO"/>
 		   	<typeAlias  alias="pizzaVO"   type="com.practice.contentmain.pizzas.PizzaVO"/>
 		   	<typeAlias  alias="DominoVO"   type="com.practice.contentmain.pizzas.domino.DominoVO"/>
 	  </typeAliases>

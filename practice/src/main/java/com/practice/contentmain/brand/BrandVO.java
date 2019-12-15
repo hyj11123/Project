@@ -1,4 +1,4 @@
-package com.practice.contentmain.chickens;
+package com.practice.contentmain.brand;
 
 public class BrandVO {
 
