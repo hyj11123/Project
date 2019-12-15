@@ -17,4 +17,18 @@
 		  FROM	MENU
 		 WHERE	BRAND_UID = 2
 	</select>
+	
+	
+	<select id="dominoList" resultType = "DominoVO">
+		
+		SELECT	MENU_UID
+				,BRAND_UID
+				,NAME
+				,PRICE
+				,SPICY
+				,REVIEW
+		  FROM	MENU
+		 WHERE	BRAND_UID = 2
+	
+	</select>
 </mapper>

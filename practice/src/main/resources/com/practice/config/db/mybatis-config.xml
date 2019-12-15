@@ -10,6 +10,7 @@
 		   	<typeAlias  alias="BhcVO"  	 type="com.practice.contentmain.chickens.bhc.BhcVO"/>
 		   	<typeAlias  alias="brandVO"   type="com.practice.contentmain.chickens.BrandVO"/>
 		   	<typeAlias  alias="pizzaVO"   type="com.practice.contentmain.pizzas.PizzaVO"/>
+		   	<typeAlias  alias="DominoVO"   type="com.practice.contentmain.pizzas.domino.DominoVO"/>
 	  </typeAliases>
 	  <mappers>
 	  		<mapper resource="com/practice/config/db/mapper/test.xml"/>
